@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://primepurecleaning.co.uk/sitemap.xml

@@ -1,0 +1,45 @@
+<!--
+title: Contact PrimePure Cleaning Solutions | Walsall WS1 & WS2
+description: Contact PrimePure Cleaning Solutions. Business Address: No. 2 Dudley St, Walsall WS1 3NL. Registered Office: 10 Wilbraham Rd, Walsall WS2 9PT.
+-->
+<section class="page-hero">
+  <div class="container">
+    <span class="pill">{{> ic-building}} Walsall Offices &amp; Customer Support</span>
+    <h1>Get in Touch With PrimePure</h1>
+    <p>Whether you require emergency sanitisation, a regular cleaning contract, or advice on tenancy checkouts, our local team is here to assist.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:30px">
+  <div class="container contact-grid">
+    <div>
+      <div class="info"><span class="ico">{{> ic-pin}}</span><div><small>Primary Business Address</small><strong>No. 2 Dudley Street</strong><p>Walsall, WS1 3NL<br>United Kingdom</p></div></div>
+      <div class="info"><span class="ico">{{> ic-building}}</span><div><small>Registered Corporate Office</small><strong>10 Wilbraham Road</strong><p>Walsall, WS2 9PT<br>United Kingdom</p></div></div>
+      <div class="info"><span class="ico">{{> ic-phone}}</span><div><small>Customer Care Hotline</small><strong><a href="{{telHref}}">{{phone}}</a></strong></div></div>
+      <div class="info"><span class="ico">{{> ic-mail}}</span><div><small>Email Inquiries</small><strong style="font-size:1rem;word-break:break-word"><a href="{{emailHref}}">{{email}}</a></strong></div></div>
+      <div class="info"><span class="ico">{{> ic-clock}}</span><div><small>Operating Hours</small><p>Monday – Saturday: 7:30 AM – 7:00 PM (Emergency 24/7 Available)</p></div></div>
+      <div class="info-note">Full £5M Public Liability Insurance &amp; DBS-verified operatives</div>
+    </div>
+
+    <div class="form-card">
+      <h2>Send Us a Direct Message</h2>
+      <form data-lead-form data-subject="New website message" data-formsubmit="{{formsubmitAddress}}" data-email="{{email}}" data-phone="{{phone}}" style="margin-top:18px">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="form-row">
+          <div class="field"><label for="c-first">First Name *</label><input id="c-first" name="First Name" autocomplete="given-name" placeholder="Jane" required></div>
+          <div class="field"><label for="c-last">Last Name</label><input id="c-last" name="Last Name" autocomplete="family-name" placeholder="Smith"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="c-email">Email Address *</label><input id="c-email" name="Email Address" type="email" autocomplete="email" placeholder="jane@example.co.uk" required></div>
+          <div class="field"><label for="c-phone">Phone Number *</label><input id="c-phone" name="Phone Number" type="tel" autocomplete="tel" placeholder="07123 456789" required></div>
+        </div>
+        <div class="field"><label for="c-service">Service Required</label>
+          <select id="c-service" name="Service"><option>Commercial &amp; Office Cleaning</option><option>Domestic &amp; Residential Deep Clean</option><option>End of Tenancy Cleaning</option><option>Carpet &amp; Upholstery Cleaning</option><option>Reach &amp; Wash Window Cleaning</option><option>After Builders &amp; Sparkle Clean</option><option>Other Inquiries / Bespoke</option></select>
+        </div>
+        <div class="field"><label for="c-message">Your Message / Cleaning Specification</label><textarea id="c-message" name="Message" placeholder="Tell us about your property and what you need..."></textarea></div>
+        <button class="btn btn--blue btn--block" type="submit">{{> ic-send}} Submit Inquiry</button>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>

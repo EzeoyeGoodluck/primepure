@@ -1,0 +1,104 @@
+<!--
+title: PrimePure Cleaning Solutions | Commercial & Domestic Cleaning Walsall
+description: Walsall's premier cleaning service. Operating at No. 2 Dudley St (WS1 3NL) & 10 Wilbraham Rd (WS2 9PT). Free same-day quote for residential, office & tenancy deep cleans.
+-->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="pill">{{> ic-sparkle}} Premier Cleaning Specialists in Walsall &amp; West Midlands</span>
+      <h1>Real Cleaning Results. <span class="hl-u">Spotless Homes</span> &amp; Workspaces.</h1>
+      <p class="lead">From heavily cluttered and lived-in rooms to pristine, freshly sanitized homes. Serving Walsall from <strong>No. 2 Dudley St</strong> and <strong>10 Wilbraham Rd</strong> with £5M insurance and DBS-checked staff.</p>
+      <div class="thumbs-label">Recent real work by our Walsall team:</div>
+      <div class="thumbs">
+        <div class="thumb"><img src="{{img_living}}" alt="Pristine living room after cleaning"><span>Pristine Living Room</span></div>
+        <div class="thumb"><img src="{{img_bedroom}}" alt="Deep sanitised bedroom"><span>Deep Sanitised Room</span></div>
+        <div class="thumb"><img src="{{img_carpet}}" alt="Carpet after deep dirt extraction"><span>Deep Carpet Dirt Lift</span></div>
+      </div>
+      <div class="trust-row">
+        <span>{{> ic-shield}} DBS Checked Cleaners</span>
+        <span>{{> ic-award}} £5,000,000 Insured</span>
+        <span>{{> ic-calendar}} 48hr Free Re-Clean</span>
+      </div>
+    </div>
+    <div class="form-card" id="quote">
+      <span class="tag">Fast 1-Hour Response</span>
+      <span class="eyebrow">Get Free Direct Quote</span>
+      <h2>Book Your Clean</h2>
+      <p class="intro">Tell us about your property and get an exact, tailored quote without hassle.</p>
+      <form data-lead-form data-subject="New quote request" data-formsubmit="{{formsubmitAddress}}" data-email="{{email}}" data-phone="{{phone}}">
+        {{> quote-fields}}
+        <button class="btn btn--blue btn--block" type="submit">{{> ic-send}} Get Free Fast Quote Now</button>
+        <div class="form-status" role="status" aria-live="polite"></div>
+        <div class="form-foot"><span class="ok">✓ Free &amp; no obligation</span><a href="{{telHref}}">Or call {{phone}}</a></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="address-strip">
+  <div class="container">
+    <div class="addr"><span class="ico">{{> ic-pin}}</span><div><small>Business Address</small><strong>No. 2 Dudley Street</strong><span>Walsall, WS1 3NL</span></div></div>
+    <div class="addr"><span class="ico">{{> ic-building}}</span><div><small style="color:var(--muted)">Registered Corporate Office</small><strong>10 Wilbraham Road</strong><span>Walsall, WS2 9PT</span></div></div>
+    <a class="btn btn--line addr-call" href="{{telHref}}">{{> ic-phone}} Direct Line: {{phone}}</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Real Authentic Work</span>
+      <h2>See Our Actual Cleaning In Action</h2>
+      <p>No generic stock imagery. Here is real evidence of our deep cleans, carpet dirt extraction, and room restorations in Walsall properties.</p>
+    </div>
+    <div class="grid grid-3">
+      <article class="card"><div class="media"><img src="{{img_living}}" alt="Laminate floor and lounge after deep sanitisation" loading="lazy"><span class="badge">Clean &amp; Fresh Living Space</span></div><div class="body"><h3>Laminate Floor &amp; Lounge Deep Sanitisation</h3><p>Wood and laminate degreased, polished, edges dusted and leather sofas wiped down leaving a clean, inviting atmosphere.</p><div class="tag-line">{{> ic-check}} Pet &amp; Child Safe Cleaning Products</div></div></article>
+      <article class="card"><div class="media"><img src="{{img_carpet}}" alt="High-traffic carpet after dirt extraction" loading="lazy"><span class="badge">Heavy Fiber Carpet Extraction</span></div><div class="body"><h3>High-Traffic Carpet Dirt &amp; Dust Extraction</h3><p>Lifting deep ground-in dirt, embedded pet hairs and dust from room carpets using professional industrial grade machinery.</p><div class="tag-line">{{> ic-check}} Deep Pile Fiber Rejuvenation</div></div></article>
+      <article class="card"><div class="media"><img src="{{img_bedroom}}" alt="Children's bedroom sanitised and reset" loading="lazy"><span class="badge">Bedroom Sanitised &amp; Reset</span></div><div class="body"><h3>Children's Bedroom &amp; Furniture Clean</h3><p>Mattress area sanitised, vacuumed edge-to-edge, skirting boards wiped and room thoroughly disinfected for safe, restful sleep.</p><div class="tag-line">{{> ic-check}} Non-Toxic Allergen Removal</div></div></article>
+    </div>
+
+    <div class="feature-box">
+      <div class="pics">
+        <figure><img src="{{img_underbed}}" alt="Dust and clutter in hard-to-reach areas under a bed" loading="lazy"><figcaption>Hard-To-Reach Areas</figcaption></figure>
+        <figure><img src="{{img_clutter}}" alt="Heavily cluttered bedroom before cleaning" loading="lazy"><figcaption>Heavy Clutter Rooms</figcaption></figure>
+      </div>
+      <div>
+        <span class="eyebrow eyebrow--gold">No Job Too Challenging</span>
+        <h2 style="font-size:1.6rem">Tough, Cluttered or Neglected Spaces? We Specialize in Discretion &amp; Deep Transformation.</h2>
+        <p>We frequently help landlords, tenants, busy families, and property managers tackle spaces where dust, laundry, or debris have accumulated behind beds, under furniture, and in corners. We never judge — we simply get it spotless.</p>
+        <a class="btn btn--blue" href="/quote">Request A Quote For Your Space {{> ic-arrow}}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="container">
+    <div class="section-head" style="display:flex;justify-content:space-between;align-items:flex-end;text-align:left;max-width:none;flex-wrap:wrap;gap:16px">
+      <div><span class="eyebrow">Our Professional Hygiene Services</span><h2 style="margin:0">Comprehensive Cleaning in Walsall</h2></div>
+      <a class="btn btn--line" href="/services">View All Detailed Services {{> ic-arrow}}</a>
+    </div>
+    <div class="grid grid-3 services-grid">
+      <article class="card"><div class="media"><img src="{{img_living}}" alt="Domestic deep clean" loading="lazy"><span class="price">From £20 / hour</span></div><div class="body"><h3>Domestic &amp; Residential Deep Clean</h3><p>Regular house cleans, top-to-bottom thorough deep cleans and room decluttering across Walsall &amp; West Midlands.</p><ul class="checks"><li>Eco-friendly, child &amp; pet safe products</li><li>Key-holding insured service</li><li>Kitchen degreasing, descaling &amp; sanitising</li></ul><a class="btn btn--line btn--block" href="/quote?service=Domestic%20%26%20Residential%20Deep%20Clean">Request Quote for This</a></div></article>
+      <article class="card"><div class="media"><img src="{{img_carpet}}" alt="Carpet deep extraction" loading="lazy"><span class="price">From £39 / room</span></div><div class="body"><h3>Carpet &amp; Floor Deep Extraction</h3><p>Deep fiber vacuuming, hot-water extraction, stain lifting, neutralising odours and allergen removal.</p><ul class="checks"><li>Heavy pile restoration &amp; dirt lift</li><li>Deep fiber sanitisation</li><li>Pet hair &amp; ground-in grime specialists</li></ul><a class="btn btn--line btn--block" href="/quote?service=Carpet%20%26%20Floor%20Deep%20Clean">Request Quote for This</a></div></article>
+      <article class="card"><div class="media"><img src="{{img_bedroom}}" alt="End of tenancy clean" loading="lazy"><span class="price">From £129</span></div><div class="body"><h3>End of Tenancy &amp; Handover Cleans</h3><p>Guaranteed deposit-return cleaning compliant with leading UK letting agents and landlords' strict handover checklists.</p><ul class="checks"><li>100% Deposit Back Guarantee (72hr re-clean)</li><li>Oven, appliance &amp; skirting deep clean</li><li>Approved agency inventory checklist</li></ul><a class="btn btn--line btn--block" href="/quote?service=End%20of%20Tenancy%20(Guaranteed)">Request Quote for This</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The PrimePure Distinction</span>
+      <h2>Why Walsall Businesses &amp; Families Rely on Us</h2>
+      <p>Consistent reliability, medical-grade hygiene protocols, and straightforward communication.</p>
+    </div>
+    <div class="grid grid-4">
+      <div class="why-card"><div class="ico">{{> ic-shield}}</div><h3>Full £5M Liability</h3><p>Comprehensive insurance protection so you have complete peace of mind while we clean.</p></div>
+      <div class="why-card"><div class="ico">{{> ic-award}}</div><h3>100% Deposit Return</h3><p>Our tenancy cleanings follow strict letting agent checklists with a free 72-hour re-clean guarantee.</p></div>
+      <div class="why-card"><div class="ico">{{> ic-clock}}</div><h3>Flexible Scheduling</h3><p>Out-of-hours commercial cleans, early mornings or weekend domestic slots available upon request.</p></div>
+      <div class="why-card"><div class="ico">{{> ic-home}}</div><h3>Eco-Safe Formulas</h3><p>Non-toxic, allergen-reducing cleaning detergents that are pet and child-friendly.</p></div>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

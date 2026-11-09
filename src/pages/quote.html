@@ -1,0 +1,28 @@
+<!--
+title: Fast Cleaning Quote & Booking | PrimePure Walsall
+description: Request a free direct cleaning quote with PrimePure Cleaning Solutions. Serving Walsall from No. 2 Dudley St and 10 Wilbraham Rd.
+-->
+<section class="page-hero">
+  <div class="container">
+    <span class="pill">{{> ic-sparkle}} Fast &amp; Accurate Cleaning Estimate</span>
+    <h1>Request Your Cleaning Quote</h1>
+    <p>Fill in your details below for a prompt, transparent price tailored to your exact Walsall property needs.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:20px">
+  <div class="container" style="max-width:860px">
+    <div class="form-card">
+      <form data-lead-form data-subject="New quote request" data-formsubmit="{{formsubmitAddress}}" data-email="{{email}}" data-phone="{{phone}}">
+        {{> quote-fields}}
+        <button class="btn btn--blue btn--block" type="submit">{{> ic-send}} Send Quote Request</button>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+      <div class="form-trust">
+        <span>{{> ic-shield}} £5M Public Liability Insured</span>
+        <span>{{> ic-check}} DBS Vetted Local Cleaners</span>
+        <span>{{> ic-building}} No. 2 Dudley Street, Walsall</span>
+      </div>
+    </div>
+  </div>
+</section>

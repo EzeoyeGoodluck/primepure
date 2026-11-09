@@ -1,0 +1,13 @@
+{
+  "name": "primepure-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for PrimePure Cleaning Solutions, Walsall. Static HTML/CSS, deployed on Vercel.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "images": "node download-images.mjs",
+    "preview": "node build.mjs && npx --yes serve public"
+  },
+  "engines": { "node": ">=18" }
+}

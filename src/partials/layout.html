@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="canonical" href="{{canonical}}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{name}}">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:image" content="{{ogImage}}">
+  <meta name="theme-color" content="#0051d5">
+  <link rel="icon" href="{{img_logo}}">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HouseCleaningService",
+    "name": "{{name}}",
+    "url": "{{url}}",
+    "logo": "{{ogImage}}",
+    "telephone": "{{phoneTel}}",
+    "email": "{{email}}",
+    "address": { "@type": "PostalAddress", "streetAddress": "No. 2 Dudley Street", "addressLocality": "Walsall", "postalCode": "WS1 3NL", "addressCountry": "GB" },
+    "areaServed": ["Walsall", "Birmingham", "Wolverhampton", "West Bromwich", "Sutton Coldfield", "Solihull", "Dudley", "Cannock", "Lichfield"],
+    "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "07:30", "closes": "19:00" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="topbar">
+    <div class="container">
+      <div class="left">
+        <span>{{> ic-pin}} Walsall &amp; West Midlands • Serving WS1, WS2 &amp; surrounds</span>
+        <span>{{> ic-clock}} Mon–Sat 7:30am – 7:00pm</span>
+      </div>
+      <div class="right">
+        <a href="{{emailHref}}">{{> ic-mail}} {{email}}</a>
+        <a class="call" href="{{telHref}}">{{> ic-phone}} Call: {{phone}}</a>
+      </div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="{{name}} home">
+        <img src="{{img_logo}}" alt="{{name}} logo" width="72" height="52">
+        <span><strong>PrimePure</strong><small>Cleaning Solutions</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
+      <nav class="main-nav" id="main-nav" aria-label="Main"><ul>{{navItems}}</ul></nav>
+      <a class="btn btn--blue header-cta" href="/quote">{{> ic-sparkle}} Get Free Quote</a>
+    </div>
+  </header>
+
+  <main id="main">
+{{content}}
+  </main>
+
+  <div class="trust-band">
+    <div class="container grid grid-4">
+      <div><div>{{> ic-shield}}<span><strong>Fully Insured &amp; DBS</strong><span>£5M Public Liability cover</span></span></div></div>
+      <div><div>{{> ic-award}}<span><strong>100% Satisfaction</strong><span>Guaranteed spotless results</span></span></div></div>
+      <div><div>{{> ic-heart}}<span><strong>Eco-Friendly Care</strong><span>Safe for pets &amp; children</span></span></div></div>
+      <div><div>{{> ic-check}}<span><strong>Certified Technicians</strong><span>Trained to COSHH standards</span></span></div></div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="/"><img src="{{img_logo}}" alt="{{name}} logo" width="72" height="52" loading="lazy"><span><strong>PrimePure</strong><small>Cleaning Solutions</small></span></a>
+        <p>Premium commercial, office, residential, tenancy and specialist carpet cleaning across Walsall, Birmingham and the wider West Midlands. Committed to pristine quality, hygiene and total peace of mind.</p>
+        <span class="badge-chamber">Walsall Chamber of Commerce Ready</span>
+      </div>
+      <div>
+        <h3>Cleaning Services</h3>
+        <ul>{{serviceLinks}}</ul>
+      </div>
+      <div>
+        <h3>Addresses &amp; Contact</h3>
+        <div class="f-addr">
+          <div>{{> ic-pin}}<span><strong>Business Address:</strong>No. 2 Dudley Street<br>Walsall, WS1 3NL<br>United Kingdom</span></div>
+          <div>{{> ic-pin}}<span><strong>Registered Office:</strong>10 Wilbraham Road<br>Walsall, WS2 9PT<br>United Kingdom</span></div>
+          <div>{{> ic-phone}}<a href="{{telHref}}">{{phone}}</a></div>
+          <div>{{> ic-mail}}<a href="{{emailHref}}">{{email}}</a></div>
+        </div>
+      </div>
+      <div>
+        <h3>Local Coverage Area</h3>
+        <p style="color:rgba(255,255,255,.72);margin:0">Prompt response teams across West Midlands:</p>
+        <div class="chips">{{areaChips}}</div>
+        <div class="hours-box"><strong>Operating Hours</strong>Mon–Sat: 7:30 AM – 7:00 PM<br><span class="gold">24/7 Out-of-hours commercial cleans</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© <span data-year>2026</span> {{name}}. All rights reserved. Registered in England &amp; Wales.</span>
+        <nav aria-label="Footer"><a href="/about">About</a><a href="/services">Services</a><a href="/contact">Locations &amp; Contact</a><a href="/quote">Free Quote</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <div class="call-bar">
+    <a class="btn btn--blue" href="{{telHref}}">Call now</a>
+    <a class="btn btn--gold" href="/quote">Free Quote</a>
+  </div>
+  <script>document.querySelector('[data-year]').textContent = new Date().getFullYear();</script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
