@@ -5,6 +5,9 @@
   "phoneTel": "+441922898240",
   "email": "hello@primepurecleaning.co.uk",
   "formsubmitAddress": "hello@primepurecleaning.co.uk",
+  "whatsapp": "441922898240",
+  "whatsappDisplay": "01922 898 240",
+  "whatsappText": "Hi PrimePure, I'd like a quote for cleaning.",
   "images": {
     "logo": "/assets/img/logo.png",
     "kitchen": "/assets/img/kitchen.jpg",

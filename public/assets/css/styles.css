@@ -338,6 +338,18 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 940px) { .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } .footer-bottom a { margin: 0 22px 0 0; } }
 
+/* WhatsApp */
+.wa-float {
+  position: fixed; right: 22px; bottom: 22px; z-index: 80;
+  display: inline-flex; align-items: center; gap: 9px;
+  background: #128C7E; color: #fff; padding: 13px 19px; border-radius: 999px;
+  font-weight: 600; font-size: .92rem; box-shadow: 0 6px 22px rgba(5, 28, 60, .22);
+}
+.wa-float:hover { background: #0E6F64; color: #fff; }
+.wa-float svg { width: 20px; height: 20px; flex: none; }
+@media (max-width: 760px) { .wa-float { bottom: 88px; right: 14px; padding: 12px 16px; } }
+@media print { .wa-float, .call-bar { display: none !important; } }
+
 /* Mobile call bar */
 .call-bar { display: none; }
 @media (max-width: 760px) {

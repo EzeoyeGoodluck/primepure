@@ -7,12 +7,25 @@
 //
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const read = (p) => fs.readFileSync(path.join(root, p), 'utf8');
 const json = (p) => JSON.parse(read(p));
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+// Assets are cached hard, so every asset URL carries a hash of its own
+// contents. Replace a photo under the same filename and the URL changes
+// with it, which is the only reliable way to stop a CDN serving the old one.
+function versioned(urlPath) {
+  try {
+    const bytes = fs.readFileSync(path.join(root, 'public', urlPath.replace(/^\//, '')));
+    return `${urlPath}?v=${crypto.createHash('sha1').update(bytes).digest('hex').slice(0, 8)}`;
+  } catch {
+    return urlPath;
+  }
+}
 
 const cfg = json('site.config.json');
 const services = json('src/data/services.json');
@@ -49,6 +62,9 @@ const icons = {
   building: stroke('<path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/>'),
   leaf: stroke('<path d="M12 3c4 4 6 7 6 10a6 6 0 0 1-12 0c0-3 2-6 6-10z"/>'),
   camera: stroke('<rect x="2" y="4" width="20" height="16" rx="2"/><path d="M12 4v16"/><circle cx="7" cy="11" r="1.6"/><circle cx="17" cy="11" r="1.6"/>'),
+  // Generic speech bubble, not the WhatsApp mark. If you want the official
+  // icon, drop WhatsApp's own brand asset into public/assets/img and use it.
+  chat: stroke('<path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.3-.6L3 21l1.7-4.6A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4z"/>'),
 };
 const star = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>';
 
@@ -209,8 +225,12 @@ const globals = {
   footerServices: services.map((s) => `<li><a href="/services/${s.slug}">${esc(s.nav)}</a></li>`).join(''),
   footerAreas: towns.slice(0, 5).map((t) => `<li><a href="/areas/${t.slug}">${esc(t.name)}</a></li>`).join('') + '<li><a href="/areas">All nine towns</a></li>',
 };
-for (const [k, v] of Object.entries(cfg.images)) globals[`img_${k}`] = v;
+for (const [k, v] of Object.entries(cfg.images)) globals[`img_${k}`] = versioned(v);
 for (const [k, v] of Object.entries(icons)) globals[`ic_${k}`] = v;
+globals.cssUrl = versioned('/assets/css/styles.css');
+globals.jsUrl = versioned('/assets/js/main.js');
+globals.waHref = `https://wa.me/${cfg.whatsapp}?text=${encodeURIComponent(cfg.whatsappText)}`;
+globals.whatsappDisplay = esc(cfg.whatsappDisplay);
 
 function render(tpl, vars, depth = 0) {
   if (depth > 6) throw new Error('Partial nesting too deep');
@@ -246,14 +266,13 @@ function emit({ out, url, title, description, body, vars = {}, schema, indexed =
       return `<li><a href="${href}"${current ? ' aria-current="page"' : ''}>${esc(label)}</a></li>`;
     })
     .join('');
-  const logo = globals.img_logo;
   const all = {
     ...globals,
     ...vars,
     title: esc(title),
     description: esc(description),
     canonical: cfg.url + url,
-    ogImage: cfg.url + logo,
+    ogImage: cfg.url + cfg.images.logo,
     navItems,
     schema: schema || schemaFor([]),
   };

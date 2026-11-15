@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="{{cssUrl}}">
   <script type="application/ld+json">{{schema}}</script>
 </head>
 <body>
@@ -67,7 +67,7 @@
       <div class="footer-contact">
         <h4>Contact</h4>
         <p>No. 2 Dudley Street<br>Walsall WS1 3NL</p>
-        <p><a class="tel" href="{{telHref}}">{{phone}}</a><br><a href="{{emailHref}}">{{email}}</a></p>
+        <p><a class="tel" href="{{telHref}}">{{phone}}</a><br><a href="{{emailHref}}">{{email}}</a><br><a href="{{waHref}}" target="_blank" rel="noopener">WhatsApp us</a></p>
         <p class="hours">Mon&ndash;Sat, 7:30am&ndash;7:00pm</p>
       </div>
     </div>
@@ -79,12 +79,16 @@
     </div>
   </footer>
 
+  <a class="wa-float" href="{{waHref}}" target="_blank" rel="noopener" aria-label="Chat to us on WhatsApp">
+    {{ic_chat}}<span>WhatsApp</span>
+  </a>
+
   <div class="call-bar">
     <a class="btn btn--line" href="{{telHref}}">Call</a>
     <a class="btn btn--blue" href="/quote">Request a quote</a>
   </div>
 
   <script>document.querySelector('[data-year]').textContent = new Date().getFullYear();</script>
-  <script src="/assets/js/main.js" defer></script>
+  <script src="{{jsUrl}}" defer></script>
 </body>
 </html>

@@ -80,6 +80,33 @@ Things the build leaves as `[PLACEHOLDER]` because nobody has supplied them:
 
 Search the repo for `[` in `src/` to find them all.
 
+## WhatsApp
+
+A floating "WhatsApp" button sits on every page, plus links on the contact page
+and in the footer. The number lives in `site.config.json`:
+
+```json
+"whatsapp": "441922898240",        // international format, no + and no spaces
+"whatsappDisplay": "01922 898 240",
+"whatsappText": "Hi PrimePure, I'd like a quote for cleaning."
+```
+
+**Check this number is actually on WhatsApp before launch.** It is currently set
+to the landline, which only works if that number is registered to a WhatsApp
+Business account. If WhatsApp runs on a mobile instead, put that number here.
+
+The button uses a plain speech-bubble icon rather than the WhatsApp mark. If you
+want the official icon, download WhatsApp's own brand asset, drop it in
+`public/assets/img/` and swap it into the `chat` icon in `build.mjs`.
+
+## Assets and caching
+
+`/assets/*` is served with a one-year immutable cache, and every asset URL
+carries a hash of its own contents (`styles.css?v=2293697b`). Replace a photo
+under the same filename and the URL changes with it, so nobody is served the old
+one. This matters: an earlier version cached assets for a week with no hash, and
+a replaced photo kept showing the previous image.
+
 ## Forms
 
 The quote and contact forms post to **FormSubmit** (free, no account) and arrive
