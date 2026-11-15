@@ -223,6 +223,10 @@ const base = {
   '@type': 'HouseCleaningService',
   '@id': `${cfg.url}/#business`,
   name: cfg.name,
+  // People search "prime pure" as two words; the site writes it as one.
+  // These tell Google the spellings are the same business.
+  legalName: cfg.legalName,
+  alternateName: ['Prime Pure Cleaning', 'Prime Pure Cleaning Solutions', 'PrimePure', cfg.legalName],
   url: cfg.url,
   telephone: cfg.phoneTel,
   email: cfg.email,
@@ -276,6 +280,7 @@ const globals = {
   stars: star.repeat(5),
   starsLarge: star.repeat(5),
   socialProof: socialProof(null),
+  legalName: esc(cfg.legalName),
   legalLine: cfg.companyNumber
     ? `Registered in England &amp; Wales<br>Company No. ${esc(cfg.companyNumber)}`
     : 'Registered in England &amp; Wales',
