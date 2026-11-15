@@ -336,7 +336,7 @@ function emit({ out, url, title, description, body, vars = {}, schema, indexed =
     title: esc(title),
     description: esc(description),
     canonical: cfg.url + url,
-    ogImage: cfg.url + cfg.images.logo,
+    ogImage: cfg.url + cfg.images.kitchen,
     navItems,
     schema: schema || schemaFor([]),
   };
@@ -535,9 +535,9 @@ fs.writeFileSync(
       background_color: '#F7F5F0',
       theme_color: '#0050C0',
       icons: [
-        { src: globals.img_icon192, sizes: '192x192', type: 'image/png' },
-        { src: globals.img_icon512, sizes: '512x512', type: 'image/png' },
-        { src: globals.img_appleIcon, sizes: '180x180', type: 'image/png' },
+        { src: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+        { src: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+        { src: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
       ],
     },
     null,
