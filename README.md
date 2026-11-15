@@ -63,8 +63,11 @@ Colours and type are at the top of `public/assets/css/styles.css`.
 
 - Royal blue `#0050C0` — sampled from the logo, `rgb(0, 80, 192)`. Top bar,
   buttons, links, tick marks.
-- Navy `#072B66` and ink `#051C3C` — the same hue darkened, for large dark
-  surfaces and headings. Never use royal blue for a full-height band.
+- Navy `#072B66` and ink `#051C3C` — the same hue darkened. Navy is for
+  full-width bands only, where royal blue would overwhelm; ink for headings
+  and the footer. Anything that sits next to a button — the guarantee card,
+  the at-a-glance panel — takes the royal blue, so two blues never clash in
+  one eyeful.
 - Gold `#A87F2E` (on light) and `#D9A93F` (on navy) — stars, numerals and small
   uppercase labels only. Never a gold button on a light background.
 - Ivory `#F7F5F0` page background, Newsreader headings, Inter body.

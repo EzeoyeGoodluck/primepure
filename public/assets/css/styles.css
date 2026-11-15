@@ -151,9 +151,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .float-card > svg { width: 22px; height: 22px; color: var(--gold-light); margin-bottom: 12px; }
 .float-card p { font-family: var(--serif); font-size: .92rem; line-height: 1.55; margin: 0 0 10px; }
 .float-card .by { font-size: .78rem; color: var(--muted); margin: 0; font-family: var(--sans); }
-.float-card--navy { background: var(--navy); border-color: var(--navy); color: #fff; }
-.float-card--navy p { font-size: 1.2rem; line-height: 1.25; }
-.float-card--navy .by { color: var(--on-navy); font-size: .81rem; line-height: 1.5; }
+/* Solid cards sit next to buttons, so they take the logo blue. The deep
+   navy is only for full-width bands, where this blue would overwhelm. */
+.float-card--solid { background: var(--blue); border-color: var(--blue); color: #fff; }
+.float-card--solid p { font-size: 1.2rem; line-height: 1.25; }
+.float-card--solid .by { color: var(--on-blue); font-size: .81rem; line-height: 1.5; }
 @media (max-width: 940px) { .hero-grid { grid-template-columns: 1fr; gap: 40px; } .float-card { left: 12px; bottom: -20px; } }
 
 .page-hero { padding: 40px 0 72px; }
@@ -281,10 +283,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .sitemap-panel p { font-size: .84rem; color: var(--muted); margin: 18px 0 0; }
 
 /* Facts panel */
-.facts { background: var(--navy); color: var(--on-navy); border-radius: var(--r); padding: 36px 34px; }
+.facts { background: var(--blue); color: var(--on-blue); border-radius: var(--r); padding: 36px 34px; }
 .facts h3 { color: #fff; font-size: 1.5rem; margin-bottom: 20px; }
 .facts dl { display: grid; gap: 0; margin: 0; }
-.facts .row { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid #214973; }
+.facts .row { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(255, 255, 255, .24); }
 .facts .row:last-of-type { border-bottom: 0; }
 .facts dt { font-size: .91rem; }
 .facts dd { margin: 0; font-size: .91rem; font-weight: 600; color: #fff; text-align: right; }

@@ -204,7 +204,7 @@ function socialProof(town) {
 function heroMedia(svc, imgs) {
   if (svc.image) {
     return `<img src="${imgs[svc.image]}" alt="${esc(svc.name)} by the PrimePure team" width="1100" height="760">
-  <div class="float-card float-card--navy">${icons.shieldCheck}<p>72-hour re-clean guarantee</p><p class="by">Anything we cleaned that is not right, we come back and re-do. No charge, no argument.</p></div>`;
+  <div class="float-card float-card--solid">${icons.shieldCheck}<p>72-hour re-clean guarantee</p><p class="by">Anything we cleaned that is not right, we come back and re-do. No charge, no argument.</p></div>`;
   }
   return `<div class="facts">
   <h3>What you get either way</h3>
