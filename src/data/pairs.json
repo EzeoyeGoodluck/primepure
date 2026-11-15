@@ -1,0 +1,38 @@
+{
+  "walsall": {
+    "house-cleaning": "Most of our regular domestic rounds are in Walsall, so we can usually offer a slot within the week rather than the month. Terraced streets around Caldmore and Palfrey, semis out towards Aldridge and Streetly — the same two people each visit, and keys held at an office two miles away.",
+    "end-of-tenancy-cleaning": "Walsall has a large private rented sector and we clean for both sides of it: tenants trying to get a deposit back, and landlords turning a property round between lets. Being based on Dudley Street means we can often take a checkout at short notice.",
+    "carpet-cleaning": "Much of Walsall's housing stock is older, and older carpet in an older house has usually had a long life before anyone rings us. We bring the extraction machine anywhere in WS1 to WS5 with no travel charge.",
+    "decluttering": "We take on clearance and deep reset work right across Walsall, for families, carers and landlords alike. Being local means we can come back for a second day without it costing you travel time.",
+    "office-cleaning": "We hold contracts through Walsall town centre and the industrial estates out towards Bescot and Darlaston. Early-morning and evening rounds are straightforward here because it is the first stop out of the yard.",
+    "after-builders-cleaning": "Extensions, loft conversions and the newer estates at Darlaston and Bloxwich keep this service busy in Walsall. We can usually fit a post-works clean in within a few days of the trades finishing.",
+    "school-cleaning": "We clean primary schools and nurseries across the Walsall borough, from the town centre out to Aldridge and Bloxwich. Being five minutes from most of them means an extra touch-point pass during an outbreak is a phone call, not a negotiation."
+  },
+  "birmingham": {
+    "house-cleaning": "Our Birmingham domestic work concentrates in Moseley, Harborne, Kings Heath and Edgbaston, where we run established weekly and fortnightly rounds. Tell us about parking restrictions when you book — it is the single thing that most often costs time on the day.",
+    "end-of-tenancy-cleaning": "Birmingham's rental market moves quickly, particularly the student houses around Selly Oak where whole streets change hands in the same fortnight. We hold capacity back for the summer changeover specifically.",
+    "carpet-cleaning": "Rented houses through Selly Oak and Erdington see heavy traffic and the carpets show it. We also clean a steady run of rugs and upholstery in the larger Edgbaston and Moseley houses.",
+    "decluttering": "We cover Birmingham for clearance and deep reset work, including probate properties and flats that need emptying before a sale. Two staff, start to finish, and nothing discussed outside the team.",
+    "office-cleaning": "Jewellery Quarter studios, Digbeth workspaces and professional offices around Edgbaston make up most of our Birmingham commercial work. Out-of-hours access through managed buildings is routine for us.",
+    "after-builders-cleaning": "Conversions in the Jewellery Quarter and Digbeth produce the finest, most persistent dust we deal with — brick, plaster and timber together in old buildings with poor airflow. Two passes is not optional on these.",
+    "school-cleaning": "Birmingham schools range from Victorian board schools with high ceilings and original floors to new-build academies, and they do not clean the same way. We quote on the building in front of us rather than on a price per pupil."
+  },
+  "wolverhampton": {
+    "house-cleaning": "Our Wolverhampton round covers Tettenhall, Compton, Penn and Finchfield, with no travel charge anywhere in WV. The larger Victorian houses here usually want three hours rather than two, and we say so when we quote.",
+    "end-of-tenancy-cleaning": "Between the student houses near the university and the terraced rental streets through Whitmore Reans and Blakenhall, Wolverhampton is one of our busiest towns for checkout cleans.",
+    "carpet-cleaning": "The big Victorian houses around Tettenhall and Compton often have carpet laid over original boards, which needs careful moisture control. We extract rather than soak, and set airflow going before we leave.",
+    "decluttering": "We take clearance and reset work right across Wolverhampton, including properties being prepared for sale or for a relative moving in. The same two staff for the whole job, however long it takes.",
+    "office-cleaning": "Offices along the ring road and the business units out towards Bilston make up most of our Wolverhampton contracts. Evening rounds start as soon as your last person leaves.",
+    "after-builders-cleaning": "Extension and conversion work through Penn, Finchfield and Castlecroft keeps this busy. We wait until the trades are genuinely finished, then do two passes with filtered vacuums.",
+    "school-cleaning": "We cover schools and nurseries across Wolverhampton, including the wraparound-care settings that need a mid-afternoon pass as well as an evening one. No travel charge anywhere in WV, so an extra visit does not come with a surcharge."
+  },
+  "west-bromwich": {
+    "house-cleaning": "West Bromwich is under twenty minutes from the office, so it gets early slots and timings we can actually keep. Regular rounds run through Charlemont, Stone Cross and Great Barr.",
+    "end-of-tenancy-cleaning": "A good share of our West Bromwich work is rental, both for individual landlords and for agents managing several streets at a time. One monthly invoice, and a dated photo set for every property.",
+    "carpet-cleaning": "Terraced streets around Carters Green and the post-war estates at Friar Park give us plenty of high-traffic carpet to lift. Stairs and landings are priced the same as a room.",
+    "decluttering": "We do clearance and deep reset work across West Bromwich, often for landlords taking a property back or families clearing after a move. Quiet, unhurried, and no judgement.",
+    "office-cleaning": "Small offices, clinics and retail units around the High Street, plus the industrial units at Black Lake. Being close means a supervisor can drop in rather than ring.",
+    "after-builders-cleaning": "Extensions and conversions through Charlemont and Stone Cross, plus landlord refurbishments turning properties round between tenancies. Short-notice slots are easier here than anywhere except Walsall.",
+    "school-cleaning": "West Bromwich is close enough to our base that a supervisor can call in unannounced rather than ring, which is the only way standards hold in a school contract past the third month. Evening rounds start as soon as the site is clear."
+  }
+}

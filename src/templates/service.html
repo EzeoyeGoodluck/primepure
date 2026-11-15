@@ -1,0 +1,84 @@
+<div class="container crumbs">
+  <nav aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li aria-hidden="true">/</li>
+      <li><a href="/services">Services</a></li>
+      <li aria-hidden="true">/</li>
+      <li><span aria-current="page">{{svcName}}</span></li>
+    </ol>
+  </nav>
+</div>
+
+<section class="page-hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">{{svcLabel}}</span>
+      <h1>{{svcName}} in Walsall</h1>
+      <p class="lead">{{svcIntro}}</p>
+      <div class="btn-row" style="margin-bottom:28px">
+        <a class="btn btn--blue" href="/quote">Request a quote</a>
+        <a class="btn btn--line" href="{{telHref}}">{{ic_phone}} {{phone}}</a>
+      </div>
+      <ul class="trust-row">
+        <li>{{ic_check}} DBS-checked, &pound;5m insured</li>
+        <li>{{ic_check}} 72-hour re-clean guarantee</li>
+        <li>{{ic_check}} We reply within the hour</li>
+      </ul>
+    </div>
+    <div class="hero-media">{{svcHeroMedia}}</div>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The checklist</span>
+      <h2>Everything that gets cleaned</h2>
+      <p>Published in full, so you can hold us to it &mdash; and so you know what you are getting before anyone turns up.</p>
+    </div>
+    <div class="grid grid-4">{{svcChecklist}}</div>
+    <p class="note">{{svcNotIncluded}}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">How it runs</span>
+      <h2>What actually happens</h2>
+      <p class="lead">We book the job, not a block of hours, so nobody is watching a clock while the oven soaks. Here is the order it goes in.</p>
+    </div>
+    <div class="light-card">
+      <ol class="step-list">{{svcProcess}}</ol>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Also available in</span>
+      <h2>{{svcName}} near you</h2>
+      <p>Each of these is a page of its own, written for that town &mdash; not this page with the name swapped.</p>
+    </div>
+    <ul class="chips">{{svcTownChips}}</ul>
+  </div>
+</section>
+
+<section class="section" id="quote">
+  <div class="container split">
+    <div class="faq">
+      <span class="eyebrow">Questions</span>
+      <h2>What people ask us</h2>
+      <dl>{{svcFaq}}</dl>
+    </div>
+    <div class="form-card">
+      <h2>Request a quote</h2>
+      <p class="intro">Tell us about the property and we will come back within the hour.</p>
+      {{> quote-form}}
+    </div>
+  </div>
+</section>
+
+{{> cta}}

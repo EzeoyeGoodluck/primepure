@@ -1,0 +1,166 @@
+[
+  {
+    "slug": "walsall",
+    "name": "Walsall",
+    "primary": true,
+    "postcodes": "WS1 to WS5",
+    "county": "West Midlands",
+    "travel": "This is home — our base is on Dudley Street, WS1.",
+    "intro": "Walsall is where PrimePure started and where most of our work still is. Our team knows the difference between a Caldmore terrace and a 1930s semi out towards Aldridge, which matters more than it sounds when you are quoting a deep clean over the phone.",
+    "housing": "Victorian terraces around the town centre, interwar semis spreading out towards Aldridge and Streetly, and newer estates at Darlaston and Bloxwich.",
+    "areas": ["Caldmore", "Palfrey", "Pleck", "Birchills", "Blakenall", "Rushall", "Aldridge", "Streetly", "Darlaston", "Willenhall", "Bloxwich", "Bescot"],
+    "faq": [
+      {
+        "q": "Where exactly are you based?",
+        "a": "No. 2 Dudley Street, Walsall WS1 3NL. Our vans start from there every morning, which is why Walsall jobs get the earliest slots."
+      },
+      {
+        "q": "Can you hold a key for a regular clean?",
+        "a": "Yes. Keys are logged, held in a locked safe at the office and never labelled with an address. The arrangement is covered by our insurance."
+      }
+    ]
+  },
+  {
+    "slug": "birmingham",
+    "name": "Birmingham",
+    "primary": true,
+    "postcodes": "most B postcodes north and west of the city centre",
+    "county": "West Midlands",
+    "travel": "Around half an hour from our Walsall base, traffic depending.",
+    "intro": "Birmingham covers more ground than the rest of our patch put together, and the properties vary just as much. A Jewellery Quarter conversion and a Selly Oak student house need different kit and a different amount of time, and we price them accordingly.",
+    "housing": "Warehouse and office conversions in the Jewellery Quarter and Digbeth, large villas in Edgbaston and Moseley, student houses around Selly Oak, and long terraced streets through Erdington and Handsworth.",
+    "areas": ["Erdington", "Moseley", "Harborne", "Edgbaston", "Selly Oak", "Kings Heath", "Jewellery Quarter", "Digbeth", "Bournville", "Hall Green", "Acocks Green", "Northfield"],
+    "faq": [
+      {
+        "q": "Do you cover the whole of Birmingham?",
+        "a": "Most of it, and all of the areas listed above. For anywhere south of the A456 give us a ring first — we will tell you honestly whether we can get a team there at a sensible time."
+      },
+      {
+        "q": "Can you deal with city-centre flats and parking?",
+        "a": "Yes. Tell us about loading bays, permits or lift access when you enquire and we will build it into the time we allow, rather than discovering it on the morning."
+      }
+    ]
+  },
+  {
+    "slug": "wolverhampton",
+    "name": "Wolverhampton",
+    "primary": true,
+    "postcodes": "WV1 to WV11",
+    "county": "West Midlands",
+    "travel": "About twenty-five minutes from our Walsall base.",
+    "intro": "We have been cleaning in Wolverhampton for years — terraces in Whitmore Reans, the big Victorian semis around Tettenhall and Compton, student lets near the university, and offices along the ring road. There is no travel charge anywhere in WV.",
+    "housing": "Substantial Victorian and Edwardian houses around Tettenhall, Compton and Penn, dense terraced streets in Whitmore Reans and Blakenhall, and post-war estates through Bushbury and Wednesfield.",
+    "areas": ["Tettenhall", "Penn", "Compton", "Finchfield", "Whitmore Reans", "Wednesfield", "Bilston", "Bushbury", "Oxley", "Merry Hill", "Castlecroft", "Blakenhall"],
+    "faq": [
+      {
+        "q": "Do you charge extra to come to Wolverhampton?",
+        "a": "No. Anywhere in WV1 to WV11 is the same price as a job in Walsall."
+      },
+      {
+        "q": "Can you do student let changeovers?",
+        "a": "Yes, and the summer changeover week is our busiest of the year. If you manage houses near the university, book several weeks ahead."
+      }
+    ]
+  },
+  {
+    "slug": "west-bromwich",
+    "name": "West Bromwich",
+    "primary": true,
+    "postcodes": "B70 and B71",
+    "county": "West Midlands",
+    "travel": "Fifteen to twenty minutes from our Walsall base.",
+    "intro": "West Bromwich is one of our closest towns after Walsall itself, so it gets the same early slots and the same team week to week. A good share of our work here is rental property, both for local landlords and for agents managing a handful of streets at a time.",
+    "housing": "Terraced streets around the High Street and Carters Green, 1930s semis through Charlemont and Stone Cross, and post-war estates at Friar Park and Hill Top.",
+    "areas": ["Great Barr", "Hill Top", "Charlemont", "Stone Cross", "Carters Green", "Greets Green", "Friar Park", "Black Lake"],
+    "faq": [
+      {
+        "q": "How quickly can you get to West Bromwich?",
+        "a": "It is under twenty minutes from the office, so same-week slots are usually available and we can often do short notice."
+      },
+      {
+        "q": "Do you work with letting agents here?",
+        "a": "We do. Agents get one monthly invoice itemised by property, and a dated photo set for every handover clean."
+      }
+    ]
+  },
+  {
+    "slug": "sutton-coldfield",
+    "name": "Sutton Coldfield",
+    "postcodes": "B72 to B76",
+    "county": "West Midlands",
+    "travel": "Twenty minutes or so from our Walsall base.",
+    "intro": "Most of our Sutton Coldfield work is regular domestic cleaning for households where both people work, plus deep cleans on the larger houses around Four Oaks and Mere Green. Larger properties take longer, and we quote them on the property rather than by the hour.",
+    "housing": "Large detached houses around Four Oaks and Mere Green, 1930s semis through Boldmere and Wylde Green, and newer family housing at Walmley and Minworth.",
+    "areas": ["Boldmere", "Wylde Green", "Four Oaks", "Mere Green", "Walmley", "Streetly", "New Hall", "Minworth"],
+    "faq": [
+      {
+        "q": "Do you take on larger houses?",
+        "a": "Yes. Anything over four bedrooms we usually send two or three staff to, so it still finishes in a day."
+      }
+    ]
+  },
+  {
+    "slug": "solihull",
+    "name": "Solihull",
+    "postcodes": "B90 to B94 and B37",
+    "county": "West Midlands",
+    "travel": "Around forty minutes from our Walsall base.",
+    "intro": "Solihull is the furthest east we go regularly. The work splits fairly evenly between weekly domestic cleans and office contracts around Shirley and the business parks, with deep cleans on the village properties at Knowle and Dorridge.",
+    "housing": "Well-kept suburban semis and detached houses through Shirley and Olton, older village property in Knowle, Dorridge and Hampton-in-Arden, and high-density housing at Chelmsley Wood.",
+    "areas": ["Shirley", "Knowle", "Dorridge", "Olton", "Hampton-in-Arden", "Balsall Common", "Castle Bromwich", "Chelmsley Wood"],
+    "faq": [
+      {
+        "q": "Is there a minimum booking for Solihull?",
+        "a": "For a one-off clean, yes — it is a longer run for us, so we ask for a three-hour minimum. Regular weekly or fortnightly work has no minimum."
+      }
+    ]
+  },
+  {
+    "slug": "dudley",
+    "name": "Dudley",
+    "postcodes": "DY1 to DY3",
+    "county": "West Midlands",
+    "travel": "About half an hour from our Walsall base.",
+    "intro": "Dudley work is mostly domestic, with a steady run of end-of-tenancy cleans for landlords around Netherton and Coseley. The older stone-built property around Sedgley and Gornal often needs more attention to sills, frames and stonework than a modern house would.",
+    "housing": "Terraces and interwar semis across the borough, older stone-built property around Sedgley and Gornal, and post-war estates at Netherton and Coseley.",
+    "areas": ["Netherton", "Sedgley", "Gornal", "Brierley Hill", "Kingswinford", "Coseley", "Woodsetton", "Russells Hall"],
+    "faq": [
+      {
+        "q": "Do you cover Stourbridge and Halesowen?",
+        "a": "They sit just outside our regular Dudley round. Ring us — if we have a team nearby that week we will usually say yes."
+      }
+    ]
+  },
+  {
+    "slug": "cannock",
+    "name": "Cannock",
+    "postcodes": "WS11 and WS12",
+    "county": "Staffordshire",
+    "travel": "Twenty minutes up the A5 from our Walsall base.",
+    "intro": "Cannock is a straight run up the A5 for us, so it gets early slots. A lot of the work here is new-build estates needing an after-builders clean before anyone moves in, plus regular domestic rounds through Hednesford and Heath Hayes.",
+    "housing": "Post-war estates and a steady stream of new-build developments, with former mining-village terraces at Hednesford and Chadsmoor.",
+    "areas": ["Hednesford", "Heath Hayes", "Norton Canes", "Bridgtown", "Chadsmoor", "Cannock Wood", "Wimblebury", "Pye Green"],
+    "faq": [
+      {
+        "q": "Do you do new-build sparkle cleans?",
+        "a": "Regularly. Plaster dust and sealant residue need different kit from an ordinary clean, which is what our after-builders service is for."
+      }
+    ]
+  },
+  {
+    "slug": "lichfield",
+    "name": "Lichfield",
+    "postcodes": "WS13 and WS14",
+    "county": "Staffordshire",
+    "travel": "Around twenty-five minutes from our Walsall base.",
+    "intro": "Lichfield splits between the older property in and around the city centre and the modern estates at Boley Park and Streethay. The Georgian and Victorian houses near the Cathedral need a gentler approach to paintwork and original floors, and we staff them accordingly.",
+    "housing": "Georgian and Victorian property around the Cathedral and city centre, modern family estates at Boley Park and Streethay, and village housing out towards Whittington and Shenstone.",
+    "areas": ["Boley Park", "Streethay", "Curborough", "Whittington", "Shenstone", "Burntwood", "Armitage", "Fradley"],
+    "faq": [
+      {
+        "q": "Are you careful with older properties?",
+        "a": "Yes. Original floors, lime plaster and old paintwork all need the right products. Tell us what you have and we will say what we would use before we start."
+      }
+    ]
+  }
+]

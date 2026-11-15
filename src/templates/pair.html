@@ -1,0 +1,89 @@
+<div class="container crumbs">
+  <nav aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li aria-hidden="true">/</li>
+      <li><a href="/areas">Areas</a></li>
+      <li aria-hidden="true">/</li>
+      <li><a href="/areas/{{townSlug}}">{{townName}}</a></li>
+      <li aria-hidden="true">/</li>
+      <li><span aria-current="page">{{svcName}}</span></li>
+    </ol>
+  </nav>
+</div>
+
+<section class="page-hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">{{svcLabel}} &middot; {{townName}} {{townPostcodes}}</span>
+      <h1>{{svcName}} in {{townName}}</h1>
+      <p class="lead">{{pairIntro}}</p>
+      <div class="btn-row" style="margin-bottom:28px">
+        <a class="btn btn--blue" href="/quote">Request a quote</a>
+        <a class="btn btn--line" href="{{telHref}}">{{ic_phone}} {{phone}}</a>
+      </div>
+      <ul class="trust-row">
+        <li>{{ic_check}} No travel charge in {{townPostcodes}}</li>
+        <li>{{ic_check}} DBS-checked, &pound;5m insured</li>
+        <li>{{ic_check}} 72-hour re-clean guarantee</li>
+      </ul>
+    </div>
+    <div class="hero-media">{{svcHeroMedia}}</div>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The checklist</span>
+      <h2>What a {{svcLower}} covers</h2>
+      <p>The same published checklist everywhere we work, {{townName}} included. {{svcIntro}}</p>
+    </div>
+    <div class="grid grid-4">{{svcChecklist}}</div>
+    <p class="note">{{svcNotIncluded}}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Coverage</span>
+      <h2>Where in {{townName}} we work</h2>
+      <p class="lead">{{townHousing}}</p>
+      <p class="muted" style="margin-bottom:24px">{{townTravel}}</p>
+      <ul class="chips">{{townAreaChips}}</ul>
+    </div>
+    <div class="light-card">
+      <span class="eyebrow">How it runs</span>
+      <ol class="step-list" style="margin-top:8px">{{svcProcess}}</ol>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="container split">
+    <div class="faq">
+      <span class="eyebrow">Questions</span>
+      <h2>{{svcName}}, answered</h2>
+      <dl>{{svcFaq}}</dl>
+    </div>
+    <div>
+      <div class="form-card">
+        <h2>Request a quote</h2>
+        <p class="intro">For a {{townName}} property. Back to you within the hour.</p>
+        {{> quote-form}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <h2 style="font-size:1.5rem">Our other services in {{townName}}</h2>
+    <ul class="chips" style="margin-bottom:32px">{{pairSiblings}}</ul>
+    <h2 style="font-size:1.5rem">{{svcName}} in nearby towns</h2>
+    <ul class="chips">{{pairNearby}}</ul>
+  </div>
+</section>
+
+{{> cta}}

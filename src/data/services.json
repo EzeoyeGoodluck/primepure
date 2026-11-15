@@ -1,0 +1,201 @@
+[
+  {
+    "slug": "house-cleaning",
+    "name": "House cleaning",
+    "nav": "Regular & deep home cleaning",
+    "label": "Domestic",
+    "image": "kitchen",
+    "summary": "Weekly, fortnightly or a one-off top-to-bottom clean. Key-holding available.",
+    "bullets": ["Kitchen degreasing and descaling", "The same team every visit", "Child and pet safe products"],
+    "intro": "Regular housekeeping or a one-off deep clean, carried out by the same two people each visit so nobody has to be shown round twice. Keys held securely if you would rather not be in.",
+    "checklist": [
+      { "group": "Kitchen", "items": ["Worktops, splashbacks and tiling", "Hob, extractor and visible appliance fronts", "Sink descaled, taps polished", "Floors swept and washed", "Bins emptied and wiped"] },
+      { "group": "Bathrooms", "items": ["Bath, shower and screen descaled", "WC cleaned inside and out", "Basin, taps and mirrors polished", "Tiles and grout wiped down", "Floors washed"] },
+      { "group": "Living & bedrooms", "items": ["Dusting throughout, including shelves and frames", "Vacuuming carpets and rugs", "Hard floors swept and mopped", "Beds made or changed on request", "Mirrors and glass tops"] },
+      { "group": "Throughout", "items": ["Skirting boards and door frames", "Light switches and handles", "Cobwebs and high corners", "Internal glass in doors", "Tidying as we go"] }
+    ],
+    "process": [
+      { "title": "A walk round on the first visit", "text": "Fifteen minutes with you, noting what matters and what to leave alone. We write it down so the next team does it the same way." },
+      { "title": "A fixed rota", "text": "Same day, same time, same two people. You will know who is coming before they arrive." },
+      { "title": "Tell us when it changes", "text": "Guests, a new puppy, a room you would rather we skipped this week — a text the night before is plenty." }
+    ],
+    "faq": [
+      { "q": "Do I need to be in?", "a": "No. Most of our regular customers are at work. We can hold a key, use a key safe, or work around whoever is home." },
+      { "q": "Do you bring everything?", "a": "Yes, including the vacuum and the machines. If you prefer us to use your own products because of an allergy or a surface, just leave them out." },
+      { "q": "What if my regular cleaner is off?", "a": "You get a cover team who have been briefed from the notes we took on the first visit, and we tell you beforehand rather than surprising you." },
+      { "q": "Can I change or skip a week?", "a": "Yes. Twenty-four hours' notice and there is nothing to pay." }
+    ],
+    "notIncluded": "Not included as standard: inside the oven, inside windows above ground floor, carpet extraction and upholstery. All can be added — just ask when you enquire."
+  },
+  {
+    "slug": "end-of-tenancy-cleaning",
+    "name": "End of tenancy cleaning",
+    "nav": "End of tenancy & handover",
+    "label": "Lettings",
+    "image": "apartment",
+    "summary": "Worked to the agent's inventory checklist, with a free re-clean if anything is flagged.",
+    "bullets": ["72-hour re-clean guarantee", "Oven, appliances and skirtings", "Photo handover report"],
+    "intro": "Cleaned to the inventory checklist your agent actually uses, photographed on completion, and re-done free within 72 hours if anything is flagged on the checkout report.",
+    "checklist": [
+      { "group": "Kitchen", "items": ["Oven, racks, trays and glass", "Hob, extractor and filter", "Fridge and freezer, inside", "Cupboards inside and out", "Sink, taps and descaling"] },
+      { "group": "Bathrooms", "items": ["Limescale off tiles and screens", "Grout and sealant treated", "WC, cistern and behind", "Extractor vents cleared", "Mirrors and chrome polished"] },
+      { "group": "Bedrooms & living", "items": ["Wardrobes and drawers inside", "Behind and under furniture", "Carpets vacuumed edge to edge", "Marks lifted from walls", "Windows inside, sills and tracks"] },
+      { "group": "Throughout", "items": ["Skirtings, frames and doors", "Light switches and sockets", "Radiators, front and behind", "Cobwebs and high corners", "Bins washed, rubbish removed"] }
+    ],
+    "process": [
+      { "title": "Keys and access", "text": "We collect from you, the agent or a key safe — whatever is easiest. Tell us about parking when you book." },
+      { "title": "Room by room, to the checklist", "text": "Kitchen and bathrooms first, since they take the longest to dry and need the most soaking time." },
+      { "title": "Photographed and emailed", "text": "A dated set of every room, sent the same day, so you have evidence if the deposit is ever questioned." },
+      { "title": "72 hours to tell us", "text": "If the checkout report flags anything we cleaned, we come back and re-do it. No charge and no argument." }
+    ],
+    "faq": [
+      { "q": "Will this get my deposit back?", "a": "Cleaning is one of the commonest deductions, and we clean to the checkout standard. We cannot speak for damage or wear, but if the report flags our cleaning we return within 72 hours free." },
+      { "q": "Does the property need to be empty?", "a": "Ideally yes — furniture and boxes get in the way of exactly the corners a checkout inspects. If it cannot be, tell us and we will plan round it." },
+      { "q": "Do you do the carpets too?", "a": "Vacuuming is included. Hot-water extraction, which some agreements require in writing, can be added to the booking." },
+      { "q": "Can the agent book directly?", "a": "Yes, and many do. Agents get one monthly invoice itemised by property rather than a bill per job." }
+    ],
+    "notIncluded": "Not included as standard: exterior windows, carpet extraction and upholstery. Each can be added — just say so when you enquire."
+  },
+  {
+    "slug": "carpet-cleaning",
+    "name": "Carpet and floor cleaning",
+    "nav": "Carpet & floor extraction",
+    "label": "Floors",
+    "image": "carpet",
+    "summary": "Hot-water extraction that lifts ground-in dirt, pet hair and odour from worn pile.",
+    "bullets": ["Stain and odour treatment", "Upholstery and stairs too", "Pet hair and ground-in grime"],
+    "intro": "Hot-water extraction with industrial machines, not a domestic shampooer. It lifts the dirt that has worked down into the pile rather than just cleaning the top of it.",
+    "checklist": [
+      { "group": "Before", "items": ["Pile inspected and fibre identified", "Furniture moved where safe to do so", "Thorough dry vacuum first", "Stains pre-treated and left to dwell", "Edges and corners hand-worked"] },
+      { "group": "Extraction", "items": ["Hot-water extraction through the pile", "Traffic lanes given a second pass", "Odour neutraliser where needed", "Pile groomed in one direction", "Moisture lifted out, not left in"] },
+      { "group": "Also cleaned", "items": ["Stairs and landings", "Sofas and armchairs", "Dining chairs and mattresses", "Rugs, on site or taken away", "Hard floors and grout lines"] },
+      { "group": "After", "items": ["Furniture protected until dry", "Airflow set up to speed drying", "Aftercare explained before we go", "Any remaining marks pointed out honestly"] }
+    ],
+    "process": [
+      { "title": "We look before we quote", "text": "Fibre type, how worn the pile is and what caused the staining all change what is realistic. We would rather tell you up front than over-promise." },
+      { "title": "Pre-treat, then extract", "text": "Stains need time to break down. Rushing straight to the machine is why some carpets look no better afterwards." },
+      { "title": "Drying", "text": "Expect a few hours before normal use, longer in a cold room. We set up airflow before leaving." }
+    ],
+    "faq": [
+      { "q": "Will every stain come out?", "a": "No, and anyone who promises otherwise is guessing. Dye, bleach and old pet damage can be permanent. We will tell you what we expect to shift before we start." },
+      { "q": "How long until I can walk on it?", "a": "A few hours for light use in a warm, ventilated room. Leave heavy furniture off it until it is fully dry." },
+      { "q": "Is it safe with pets and children?", "a": "Yes. The products are non-toxic and the extraction removes the solution rather than leaving residue behind." },
+      { "q": "Do you move furniture?", "a": "We move what two people can move safely. Anything very heavy, fragile or electrical we clean around." }
+    ],
+    "notIncluded": "Not included as standard: lifting and refitting fitted carpets, repairs, or treating subfloor damp. We will tell you if we find any of it."
+  },
+  {
+    "slug": "decluttering",
+    "name": "Decluttering and deep reset",
+    "nav": "Decluttering & deep reset",
+    "label": "Specialist",
+    "image": "clutter",
+    "summary": "For rooms that have got away from you. Discreet, unhurried, no judgement.",
+    "bullets": ["Under-bed and behind-furniture", "Sorting before cleaning", "The same two staff throughout"],
+    "intro": "Some rooms need clearing before they can be cleaned. We do that work quietly, with the same two people from start to finish, and we do not talk about it afterwards.",
+    "checklist": [
+      { "group": "Sorting first", "items": ["Everything off the floor and surfaces", "Sorted with you, or to your written instructions", "Keep, donate, recycle and dispose piles", "Nothing thrown away without a yes", "Paperwork and valuables set aside separately"] },
+      { "group": "Clearing", "items": ["Under beds and behind furniture", "Wardrobe and drawer bottoms", "Rubbish bagged and removed", "Laundry gathered and sorted", "Recycling taken to the right bins"] },
+      { "group": "Then cleaning", "items": ["Full dust down, high to low", "Floors vacuumed edge to edge", "Hard surfaces washed and sanitised", "Windows, sills and tracks", "Soft furnishings freshened"] },
+      { "group": "Leaving it usable", "items": ["Furniture put back where you want it", "Clear floor and clear surfaces", "A short list of anything we could not place", "Maintenance plan if you want one"] }
+    ],
+    "process": [
+      { "title": "A quiet conversation first", "text": "On the phone or by message, whichever is easier. We need to know roughly what we are walking into so we bring the right number of people and hours." },
+      { "title": "Two people, start to finish", "text": "The same pair for the whole job. Nobody new appears halfway through, and nothing is discussed outside the team." },
+      { "title": "You decide what goes", "text": "We sort, you choose. If you would rather not be in the room, leave written instructions and we will follow them exactly." }
+    ],
+    "faq": [
+      { "q": "Will you judge the state of it?", "a": "No. We do this work every week, for landlords, carers, busy families and people who have had a hard year. It is a job, not a verdict." },
+      { "q": "Will anyone know?", "a": "Not from us. Our staff do not discuss jobs outside the team and we do not photograph this work without asking." },
+      { "q": "Do you take the rubbish away?", "a": "Yes, household waste and recycling. Large furniture, electricals and anything hazardous need a licensed carrier — we will tell you on the day." },
+      { "q": "How long does a room take?", "a": "A single heavily cluttered room is usually most of a day for two people. We would rather over-estimate than leave it half done." }
+    ],
+    "notIncluded": "Not included: hoarding cases requiring specialist clearance, biohazard or pest work, and removal of large furniture or electricals. We can point you to someone who does."
+  },
+  {
+    "slug": "office-cleaning",
+    "name": "Office and commercial cleaning",
+    "nav": "Office & commercial",
+    "label": "Commercial",
+    "image": null,
+    "summary": "Daily or weekly cover for offices, clinics, retail and communal areas.",
+    "bullets": ["Out-of-hours and weekends", "A named account supervisor", "Consumables restocked"],
+    "intro": "Contract cleaning for offices, clinics, retail units and communal areas, worked around your opening hours rather than through them. One named supervisor you can ring directly.",
+    "checklist": [
+      { "group": "Workspace", "items": ["Desks, surfaces and shared equipment", "Bins emptied and liners replaced", "Floors vacuumed or mopped throughout", "Glass partitions and internal doors", "Meeting rooms reset"] },
+      { "group": "Washrooms", "items": ["WCs, urinals and basins sanitised", "Mirrors and chrome polished", "Soap, towels and tissue restocked", "Floors washed and disinfected", "Sanitary waste contract arranged"] },
+      { "group": "Kitchen & break areas", "items": ["Worktops, sinks and splashbacks", "Fridge and microwave inside", "Appliance exteriors", "Crockery cleared and washed", "Supplies checked and reordered"] },
+      { "group": "Communal", "items": ["Entrances, lobbies and reception", "Stairwells and corridors", "Lift interiors and call panels", "High-touch points sanitised", "Doormats lifted and cleaned under"] }
+    ],
+    "process": [
+      { "title": "A site visit and a written spec", "text": "We walk the building with you and write down exactly what is covered, how often, and at what time. It becomes the schedule the team works to." },
+      { "title": "The same staff, vetted and badged", "text": "Every operative is DBS-checked and trained to COSHH standards. You get the same faces, so they learn the building." },
+      { "title": "A supervisor, not a call centre", "text": "One named contact with a direct number, plus a monthly check against the spec so standards do not drift." }
+    ],
+    "faq": [
+      { "q": "Can you work outside our opening hours?", "a": "Yes — early mornings, evenings and weekends are normal for us, and out-of-hours cover is available for commercial contracts." },
+      { "q": "Are your staff checked?", "a": "Every one is DBS-checked and identity-verified before a first shift. We can supply the certificates for your records." },
+      { "q": "Do you supply consumables?", "a": "We can. Soap, paper, bin liners and washroom supplies can be included in the contract and restocked as part of the round." },
+      { "q": "What is the minimum contract?", "a": "There is no minimum term. We ask for a month's notice either way, which is enough time to hand over properly." }
+    ],
+    "notIncluded": "Specialist work — window cleaning above ground floor, deep kitchen extract cleaning, and waste contracts — is arranged separately. We can organise it alongside the contract."
+  },
+  {
+    "slug": "after-builders-cleaning",
+    "name": "After builders cleaning",
+    "nav": "After builders & move-in",
+    "label": "Post-works",
+    "image": null,
+    "summary": "Plaster dust, paint flecks and sealant residue cleared before you move in.",
+    "bullets": ["Fine dust filtration", "Paint and residue removal", "Short-notice slots"],
+    "intro": "Building dust is not ordinary dust. It is fine enough to settle three times over and abrasive enough to scratch new surfaces if you wipe it the wrong way. This is the clean that happens between the trades leaving and the furniture arriving.",
+    "checklist": [
+      { "group": "Dust removal", "items": ["Filtered vacuuming, high to low", "Ceilings, coving and light fittings", "Tops of doors, frames and units", "Radiators, pipework and vents", "Repeat pass once the air has settled"] },
+      { "group": "Residue", "items": ["Paint flecks off glass and tiles", "Sealant and silicone smears", "Adhesive and sticker residue", "Plaster splashes on floors", "Protective film removed from units"] },
+      { "group": "New surfaces", "items": ["New units inside and out", "Appliances cleaned and film removed", "Sanitaryware polished", "Windows, frames and tracks", "Floors washed to the finish"] },
+      { "group": "Finishing", "items": ["Skirtings and shadow gaps", "Sockets, switches and plates", "Final glass and mirror polish", "Waste and offcuts cleared", "Walk round before we leave"] }
+    ],
+    "process": [
+      { "title": "Wait for the trades to finish", "text": "If anyone is still cutting or sanding, we will be back. We would rather book the right day than clean twice." },
+      { "title": "Two passes, not one", "text": "Fine dust keeps falling out of the air for hours. We clean, let it settle, and go again before the final polish." },
+      { "title": "Handover", "text": "A walk round together at the end, and a note of anything that needs the builder back rather than us." }
+    ],
+    "faq": [
+      { "q": "When should we book it?", "a": "Once all dust-making work is finished but before carpets go down and furniture arrives. That is the window where it is quickest and cheapest." },
+      { "q": "Can you get paint off the windows?", "a": "Usually, yes, with blades and the right solvents on glass. On uPVC and painted frames we are more careful and will say what we can and cannot do." },
+      { "q": "Do you take the rubble away?", "a": "We clear dust, packaging, offcuts and general waste. Rubble, plasterboard and skip-level material is the builder's to remove." },
+      { "q": "How much notice do you need?", "a": "We keep slots free each week for post-works jobs because dates move. Ring as soon as you have a likely day." }
+    ],
+    "notIncluded": "Not included: rubble and construction waste removal, snagging or making good, and scaffold-level external cleaning."
+  },
+  {
+    "slug": "school-cleaning",
+    "name": "School and nursery cleaning",
+    "nav": "School & nursery cleaning",
+    "label": "Education",
+    "image": null,
+    "summary": "Classrooms, washrooms and halls cleaned around the timetable by Enhanced DBS-checked staff.",
+    "bullets": ["Enhanced DBS on every member of staff", "Colour-coded equipment, no cross-use", "Deep cleans in the school holidays"],
+    "intro": "Daily cleaning for primary and secondary schools, nurseries and colleges, worked around the timetable rather than through it. Every member of staff on a school site holds an Enhanced DBS, and the same team comes back so you are not re-inducting strangers every week.",
+    "checklist": [
+      { "group": "Classrooms", "items": ["Desks, chairs and table tops sanitised", "High-touch points: handles, switches, rails", "Whiteboards, trays and shelving", "Floors swept, mopped or vacuumed", "Bins emptied and liners replaced"] },
+      { "group": "Washrooms & changing", "items": ["WCs, urinals and basins disinfected", "Low-level pupil fittings not missed", "Soap, paper and tissue restocked", "Floors washed with virucidal detergent", "Sanitary and nappy waste handled"] },
+      { "group": "Halls, corridors & offices", "items": ["Main halls and dining spaces reset", "Corridors, stairwells and entrances", "Reception and admin offices", "Glass doors and internal partitions", "Matting lifted and cleaned under"] },
+      { "group": "Kitchens & food areas", "items": ["Servery and dining tables after service", "Staff room worktops and appliances", "Fridges and microwaves inside", "Floors degreased", "Food-area cloths kept separate"] }
+    ],
+    "process": [
+      { "title": "A site walk and a written spec", "text": "We walk the building with your site manager and agree exactly what is cleaned, how often and at what time. That written schedule is what the team works to, and what we are inspected against." },
+      { "title": "Around the timetable", "text": "Most of the work happens after the last bell or before the first. Nurseries and wraparound care often need a mid-afternoon pass as well, which we build into the round." },
+      { "title": "Enhanced DBS and safeguarding", "text": "Everyone on site holds an Enhanced DBS, signs in through your visitor system and follows your safeguarding policy. Certificates go to your office before a first shift." },
+      { "title": "Holidays are for the deep work", "text": "Half terms and the summer are when floors get stripped and sealed, carpets extracted and the jobs done that cannot happen in term time." }
+    ],
+    "faq": [
+      { "q": "Are your staff Enhanced DBS-checked?", "a": "Everyone who sets foot on a school or nursery site, without exception. We send the certificates to your office before a first shift and keep the renewals current." },
+      { "q": "Can you work around the school day?", "a": "Yes, and we expect to. Most school rounds run after the last bell or before the first. Nurseries and wraparound care usually need a mid-afternoon pass too." },
+      { "q": "How do you stop cross-contamination?", "a": "Colour-coded cloths and mops, one colour per area, never crossed between washrooms, classrooms and food areas. Staff are trained on it and supervisors check it." },
+      { "q": "Do you do holiday deep cleans?", "a": "That is when most of the heavy work happens — floor stripping and sealing, carpet extraction, high-level dusting and anything else that cannot be done with pupils in the building." },
+      { "q": "What about an outbreak?", "a": "We can put on an additional virucidal fogging or touch-point pass at short notice. Tell us in the morning and we will usually cover it that evening." }
+    ],
+    "notIncluded": "Specialist work is arranged separately and quoted on its own: window cleaning above ground floor, kitchen extract canopy cleaning, playground jet washing and clinical waste contracts."
+  }
+]

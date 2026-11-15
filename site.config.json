@@ -5,77 +5,19 @@
   "phoneTel": "+441922898240",
   "email": "hello@primepurecleaning.co.uk",
   "formsubmitAddress": "hello@primepurecleaning.co.uk",
-  "nav": [
-    [
-      "index",
-      "Home",
-      "/"
-    ],
-    [
-      "services",
-      "Services",
-      "/services"
-    ],
-    [
-      "about",
-      "About",
-      "/about"
-    ],
-    [
-      "contact",
-      "Offices & Contact",
-      "/contact"
-    ]
-  ],
-  "services": [
-    [
-      "domestic",
-      "Domestic & Residential Deep Clean"
-    ],
-    [
-      "carpet",
-      "Carpet & Floor Deep Extraction"
-    ],
-    [
-      "tenancy",
-      "End of Tenancy & Handover Cleans"
-    ],
-    [
-      "declutter",
-      "Intensive Decluttering & Deep Transformation"
-    ],
-    [
-      "commercial",
-      "Commercial & Office Cleaning"
-    ],
-    [
-      "builders",
-      "After Builders & Move-In Cleans"
-    ]
-  ],
-  "serviceOptions": [
-    "Domestic & Residential Deep Clean",
-    "Intensive Declutter & Deep Reset",
-    "Carpet & Floor Deep Clean",
-    "End of Tenancy (Guaranteed)",
-    "Commercial & Office Cleaning",
-    "After Builders Clean"
-  ],
-  "areas": [
-    "Walsall",
-    "Birmingham",
-    "Wolverhampton",
-    "West Bromwich",
-    "Sutton Coldfield",
-    "Solihull",
-    "Dudley",
-    "Cannock",
-    "Lichfield"
-  ],
+  "companyNumber": "",
+  "vatNumber": "",
+  "whatsapp": "441922898240",
+  "whatsappDisplay": "01922 898 240",
+  "whatsappText": "Hi PrimePure, I'd like a quote for cleaning.",
   "images": {
     "logo": "/assets/img/logo.png",
-    "living": "/assets/img/living.jpg",
+    "kitchen": "/assets/img/kitchen.jpg",
     "bedroom": "/assets/img/bedroom.jpg",
+    "bathroom": "/assets/img/bathroom.jpg",
+    "apartment": "/assets/img/apartment.jpg",
+    "kitchenbusy": "/assets/img/kitchenbusy.jpg",
+    "living": "/assets/img/living.jpg",
     "carpet": "/assets/img/carpet.jpg",
     "underbed": "/assets/img/underbed.jpg",
     "clutter": "/assets/img/clutter.jpg"

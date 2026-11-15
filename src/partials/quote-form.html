@@ -1,0 +1,45 @@
+<form data-lead-form data-subject="{{formSubject}}" data-formsubmit="{{formsubmitAddress}}" data-email="{{email}}" data-phone="{{phone}}">
+  <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <div class="form-row">
+    <div class="field">
+      <label for="q-name">Name</label>
+      <input id="q-name" name="Name" autocomplete="name" placeholder="Sarah Jenkins" required>
+    </div>
+    <div class="field">
+      <label for="q-phone">Phone</label>
+      <input id="q-phone" name="Phone" type="tel" autocomplete="tel" placeholder="07123 456789" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="field">
+      <label for="q-email">Email</label>
+      <input id="q-email" name="Email" type="email" autocomplete="email" placeholder="sarah@example.co.uk" required>
+    </div>
+    <div class="field">
+      <label for="q-postcode">Postcode</label>
+      <input id="q-postcode" name="Postcode" autocomplete="postal-code" placeholder="WS1 3NL">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="field">
+      <label for="q-service">Service</label>
+      <select id="q-service" name="Service">{{serviceOptions}}</select>
+    </div>
+    <div class="field">
+      <label for="q-property">Property</label>
+      <select id="q-property" name="Property">
+        <option>1-bed flat or apartment</option>
+        <option selected>2 or 3-bed house</option>
+        <option>4-bed or larger</option>
+        <option>Office or commercial</option>
+        <option>Single room only</option>
+      </select>
+    </div>
+  </div>
+  <div class="field">
+    <label for="q-notes">Anything we should know?</label>
+    <textarea id="q-notes" name="Notes" placeholder="Rooms, condition, access and parking, when you need it&hellip;"></textarea>
+  </div>
+  <button class="btn btn--blue btn--block" type="submit">Send my enquiry</button>
+  <div class="form-status" role="status" aria-live="polite"></div>
+</form>

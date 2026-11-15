@@ -1,28 +1,34 @@
 <!--
-title: Fast Cleaning Quote & Booking | PrimePure Walsall
-description: Request a free direct cleaning quote with PrimePure Cleaning Solutions. Serving Walsall from No. 2 Dudley St and 10 Wilbraham Rd.
+title: Request a Cleaning Quote | PrimePure, Walsall
+description: Tell us about the property and we will come back within the hour, Monday to Saturday. Serving Walsall, Birmingham, Wolverhampton and six more West Midlands towns.
 -->
 <section class="page-hero">
   <div class="container">
-    <span class="pill">{{> ic-sparkle}} Fast &amp; Accurate Cleaning Estimate</span>
-    <h1>Request Your Cleaning Quote</h1>
-    <p>Fill in your details below for a prompt, transparent price tailored to your exact Walsall property needs.</p>
+    <span class="eyebrow">No obligation</span>
+    <h1>Request a quote</h1>
+    <p class="lead">Tell us the rooms, the condition and when you need it. We come back within the hour during working hours, in writing, setting out exactly what we would do.</p>
   </div>
 </section>
 
-<section class="section" style="padding-top:20px">
-  <div class="container" style="max-width:860px">
+<section class="section" style="padding-top:16px">
+  <div class="container split">
     <div class="form-card">
-      <form data-lead-form data-subject="New quote request" data-formsubmit="{{formsubmitAddress}}" data-email="{{email}}" data-phone="{{phone}}">
-        {{> quote-fields}}
-        <button class="btn btn--blue btn--block" type="submit">{{> ic-send}} Send Quote Request</button>
-        <div class="form-status" role="status" aria-live="polite"></div>
-      </form>
-      <div class="form-trust">
-        <span>{{> ic-shield}} £5M Public Liability Insured</span>
-        <span>{{> ic-check}} DBS Vetted Local Cleaners</span>
-        <span>{{> ic-building}} No. 2 Dudley Street, Walsall</span>
-      </div>
+      {{> quote-form}}
+      <p class="form-foot">Or ring <a href="{{telHref}}">{{phone}}</a> &mdash; someone local answers.</p>
+    </div>
+    <div>
+      <span class="eyebrow">What happens next</span>
+      <h2>Three things, in order</h2>
+      <ol class="step-list" style="margin-bottom:32px">
+        <li><span class="n">01</span><span><b>We read it properly</b><span>A person, not an auto-reply. If something is unclear we ring rather than guess.</span></span></li>
+        <li><span class="n">02</span><span><b>A written answer within the hour</b><span>What we would do, how long it would take and when we could come.</span></span></li>
+        <li><span class="n">03</span><span><b>You decide, no chasing</b><span>If you go elsewhere that is fine. We will not ring you four times about it.</span></span></li>
+      </ol>
+      <ul class="trust-row">
+        <li>{{ic_check}} DBS-checked cleaners</li>
+        <li>{{ic_check}} &pound;5m public liability</li>
+        <li>{{ic_check}} 72-hour re-clean guarantee</li>
+      </ul>
     </div>
   </div>
 </section>
