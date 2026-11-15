@@ -197,6 +197,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .light-card p { font-size: .94rem; color: var(--muted); margin: 0; }
 
 /* Gallery */
+.gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 940px) { .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .gallery figure { margin: 0; }
 .gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--r); }
 .gallery figcaption { font-size: .81rem; color: var(--muted); margin-top: 12px; }

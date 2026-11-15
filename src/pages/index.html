@@ -20,10 +20,10 @@ description: Deep cleans, end-of-tenancy handovers, carpet extraction and office
     </div>
     <div class="hero-media">
       <img src="{{img_kitchen}}" alt="A kitchen cleaned by the PrimePure team" width="1400" height="980" fetchpriority="high">
-      <div class="float-card">
-        <div class="stars">{{stars}}</div>
-        <p>[ONE-SENTENCE REVIEW]</p>
-        <p class="by">[NAME], [AREA] &middot; Google</p>
+      <div class="float-card float-card--navy">
+        {{ic_shieldCheck}}
+        <p>72-hour re-clean guarantee</p>
+        <p class="by">Anything we cleaned that is not right, we come back and re-do. No charge, no argument.</p>
       </div>
     </div>
   </div>
@@ -33,7 +33,7 @@ description: Deep cleans, end-of-tenancy handovers, carpet extraction and office
   <div class="container">
     <div>{{ic_shield}}<span><b>&pound;5m public liability</b><i>Certificate on request</i></span></div>
     <div>{{ic_user}}<span><b>Every cleaner DBS-checked</b><i>ID verified before a first job</i></span></div>
-    <div>{{ic_building}}<span><b>Registered in England</b><i>Company No. [NUMBER]</i></span></div>
+    <div>{{ic_building}}<span><b>Registered in England</b><i>{{registeredSub}}</i></span></div>
     <div>{{ic_leaf}}<span><b>COSHH-trained, eco products</b><i>Safe around pets and children</i></span></div>
   </div>
 </div>
@@ -57,9 +57,9 @@ description: Deep cleans, end-of-tenancy handovers, carpet extraction and office
     <div class="section-head">
       <span class="eyebrow">Our work</span>
       <h2>Real rooms, not stock photos</h2>
-      <p>Every photograph here is from one of our own jobs. The empty frame is where a matched before-and-after pair belongs &mdash; same corner, same angle, two shots.</p>
+      <p>Every photograph here is from one of our own jobs &mdash; kitchens, bathrooms, carpets, and a let turned over between tenants. No stock libraries, no borrowed interiors.</p>
     </div>
-    <div class="grid grid-3 gallery">
+    <div class="grid gallery">
       <figure>
         <img src="{{img_kitchen}}" alt="A kitchen after a clean, worktops clear and floor washed" loading="lazy" width="1400" height="980">
         <figcaption>Kitchen &mdash; regular clean</figcaption>
@@ -91,14 +91,6 @@ description: Deep cleans, end-of-tenancy handovers, carpet extraction and office
       <figure>
         <img src="{{img_underbed}}" alt="Dust and debris in the hard-to-reach space under a bed" loading="lazy" width="1200" height="900">
         <figcaption>Under-bed clearance &mdash; hard-to-reach areas</figcaption>
-      </figure>
-      <figure>
-        <div class="ghost-tile">
-          {{ic_camera}}
-          <b>Before / after pair</b>
-          <span>Shoot the same corner twice &mdash; this is the strongest image you can put on the site.</span>
-        </div>
-        <figcaption>[TO BE PHOTOGRAPHED]</figcaption>
       </figure>
     </div>
   </div>
@@ -145,34 +137,7 @@ description: Deep cleans, end-of-tenancy handovers, carpet extraction and office
   </div>
 </section>
 
-<section class="section section--white">
-  <div class="container">
-    <div class="head-row">
-      <div class="section-head">
-        <span class="eyebrow">What customers say</span>
-        <h2>From people whose houses we clean</h2>
-      </div>
-      <div class="rating"><span class="stars">{{starsLarge}}</span><span>[RATING] from [N] Google reviews</span></div>
-    </div>
-    <div class="grid grid-3">
-      <blockquote class="quote">
-        <div class="stars">{{stars}}</div>
-        <p>[REVIEW &mdash; two or three lines, in the customer&rsquo;s own words]</p>
-        <footer>[NAME] &middot; [TOWN] &middot; [SERVICE]</footer>
-      </blockquote>
-      <blockquote class="quote">
-        <div class="stars">{{stars}}</div>
-        <p>[REVIEW &mdash; ideally one that names the town, so the town page can carry it]</p>
-        <footer>[NAME] &middot; [TOWN] &middot; [SERVICE]</footer>
-      </blockquote>
-      <blockquote class="quote">
-        <div class="stars">{{stars}}</div>
-        <p>[REVIEW &mdash; a landlord or letting agent carries the most weight for tenancy work]</p>
-        <footer>[NAME] &middot; [TOWN] &middot; [SERVICE]</footer>
-      </blockquote>
-    </div>
-  </div>
-</section>
+{{socialProof}}
 
 <section class="section section--tint" id="areas">
   <div class="container">

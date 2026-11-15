@@ -28,6 +28,7 @@ src/data/
   services.json       the 6 services: checklists, process, FAQs
   towns.json          the 9 towns: postcodes, neighbourhoods, local FAQs
   pairs.json          one hand-written intro per town + service combination
+  reviews.json        real customer reviews (empty until you have some)
 src/pages/            one-off pages (home, about, contact, quote, 404)
 src/templates/        page shapes filled from the data
 src/partials/         layout, quote form, closing call-to-action
@@ -68,44 +69,54 @@ Colours and type are at the top of `public/assets/css/styles.css`.
   uppercase labels only. Never a gold button on a light background.
 - Ivory `#F7F5F0` page background, Newsreader headings, Inter body.
 
-## Still to do
+## Reviews
 
-Things the build leaves as `[PLACEHOLDER]` because nobody has supplied them:
-
-- `[NUMBER]` — company registration number, in the footer and credentials strip.
-- `[RATING]`, `[N]`, `[NAME]`, `[AREA]`, `[REVIEW ...]` — there are no reviews on
-  the site yet. This is the biggest single gap.
-- `[TO BE PHOTOGRAPHED]` — the before/after frame on the home page gallery.
-- Per-town job counts on the town pages.
-
-Search the repo for `[` in `src/` to find them all.
-
-## WhatsApp
-
-A floating "WhatsApp" button sits on every page, plus links on the contact page
-and in the footer. The number lives in `site.config.json`:
+`src/data/reviews.json` is an empty array. While it stays empty, the home page
+and every town page show a **promises** block instead — three commitments that
+can actually be checked. The moment you add a real review, that block is
+replaced by the reviews.
 
 ```json
-"whatsapp": "441922898240",        // international format, no + and no spaces
-"whatsappDisplay": "01922 898 240",
-"whatsappText": "Hi PrimePure, I'd like a quote for cleaning."
+[
+  {
+    "text": "What the customer actually wrote.",
+    "name": "Sarah J.",
+    "area": "Tettenhall",
+    "town": "wolverhampton",
+    "service": "End of tenancy",
+    "stars": 5
+  }
+]
 ```
 
-**Check this number is actually on WhatsApp before launch.** It is currently set
-to the landline, which only works if that number is registered to a WhatsApp
-Business account. If WhatsApp runs on a mobile instead, put that number here.
+`town` must match a slug in `towns.json`; it is what puts the review on that
+town's page as well as the home page. Only paste what customers really wrote.
 
-The button uses a plain speech-bubble icon rather than the WhatsApp mark. If you
-want the official icon, download WhatsApp's own brand asset, drop it in
-`public/assets/img/` and swap it into the `chat` icon in `build.mjs`.
+### Asking for them
 
-## Assets and caching
+Send this the day after a job, while it is fresh:
 
-`/assets/*` is served with a one-year immutable cache, and every asset URL
-carries a hash of its own contents (`styles.css?v=2293697b`). Replace a photo
-under the same filename and the URL changes with it, so nobody is served the old
-one. This matters: an earlier version cached assets for a week with no hash, and
-a replaced photo kept showing the previous image.
+> Hi [name], thanks for having us today. If the place looked right, would you
+> mind leaving us a quick Google review? It genuinely decides whether people
+> round here find us. Takes a minute: [your Google review link]
+
+Ask every customer for the first month. Ten honest reviews will do more for
+enquiries than anything else on this list.
+
+## Still to do
+
+Set these in `site.config.json` when you have them — the build hides what is
+blank rather than printing a placeholder:
+
+- `companyNumber` — **a UK limited company must show its registered number and
+  registered office on its website.** Until it is set, the footer says
+  "Registered in England & Wales" with no number.
+- `vatNumber` — leave blank if not registered.
+- `whatsapp` — see above; currently the landline.
+
+Also outstanding: a matched before-and-after photo pair (shoot the same corner
+twice, same angle), and a decision on whether to show both the business address
+and the registered office in `src/pages/about.html`.
 
 ## Forms
 

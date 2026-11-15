@@ -28,10 +28,10 @@
     </div>
     <div class="hero-media">
       <img src="{{img_living}}" alt="A room cleaned by our {{townName}} team" width="1100" height="760">
-      <div class="float-card">
-        <div class="stars">{{stars}}</div>
-        <p>[REVIEW FROM A {{townUpper}} CUSTOMER]</p>
-        <p class="by">[NAME], [AREA] &middot; Google</p>
+      <div class="float-card float-card--navy">
+        {{ic_pin}}
+        <p>No travel charge in {{townPostcodes}}</p>
+        <p class="by">{{townTravel}}</p>
       </div>
     </div>
   </div>
@@ -62,7 +62,7 @@
       <dl>
         <div class="row"><dt>Postcodes covered</dt><dd>{{townPostcodes}}</dd></div>
         <div class="row"><dt>Travel charge</dt><dd>None</dd></div>
-        <div class="row"><dt>Jobs completed here</dt><dd>[NUMBER]</dd></div>
+        <div class="row"><dt>Reply time</dt><dd>Within the hour</dd></div>
         <div class="row"><dt>Earliest slot</dt><dd>7:30am, Mon&ndash;Sat</dd></div>
       </dl>
       <a class="btn btn--gold btn--block" href="/quote">Check my postcode</a>
@@ -70,19 +70,7 @@
   </div>
 </section>
 
-<section class="section section--tint">
-  <div class="container">
-    <div class="head-row">
-      <div class="section-head">
-        <span class="eyebrow">Local reviews</span>
-        <h2>What {{townName}} customers say</h2>
-        <p>Reviews are filtered by town, so this page shows {{townName}} ones. Far more persuasive than a general wall of praise.</p>
-      </div>
-      <div class="rating"><span class="stars">{{starsLarge}}</span><span>[RATING] from [N] reviews</span></div>
-    </div>
-    <div class="grid grid-3">{{townReviews}}</div>
-  </div>
-</section>
+{{socialProof}}
 
 <section class="section" id="quote">
   <div class="container split">

@@ -32,6 +32,11 @@ const services = json('src/data/services.json');
 const towns = json('src/data/towns.json');
 const pairs = json('src/data/pairs.json');
 
+// Real customer reviews only. Leave this empty until you have them: the
+// pages fall back to a promises block, which is honest and still sells.
+// Shape: { "text", "name", "area", "town": "<town slug>", "service", "stars" }
+const reviews = json('src/data/reviews.json');
+
 const primaryTowns = towns.filter((t) => t.primary);
 
 // A town+service page only exists where pairs.json has a hand-written intro
@@ -131,15 +136,69 @@ function chipPlain(list) {
   return list.map((c) => `<li><span>${esc(c)}</span></li>`).join('');
 }
 
-function reviewCards(townName) {
-  const slots = [
-    `[REVIEW FROM A ${townName.toUpperCase()} CUSTOMER]`,
-    `[REVIEW — ideally one that names the neighbourhood]`,
-    `[REVIEW — a landlord or agent carries the most weight]`,
-  ];
-  return slots
-    .map((s) => `<blockquote class="quote"><div class="stars">${star.repeat(5)}</div><p>${esc(s)}</p><footer>[NAME] &middot; [AREA] &middot; [SERVICE]</footer></blockquote>`)
+function quoteCard(r) {
+  const by = [r.name, r.area, r.service].filter(Boolean).map(esc).join(' &middot; ');
+  return `<blockquote class="quote">
+  <div class="stars">${star.repeat(Math.max(1, Math.min(5, r.stars || 5)))}</div>
+  <p>${esc(r.text)}</p>
+  <footer>${by}</footer>
+</blockquote>`;
+}
+
+// Three things we can stand behind, used wherever there are no real reviews
+// yet. Every claim here is checkable, which is the whole point.
+function promiseCards(town) {
+  const where = town ? `anywhere in ${esc(town.postcodes)}` : 'before anyone starts';
+  return [
+    [
+      'A fixed quote, in writing',
+      town
+        ? `One figure for the whole job, ${where}, with no travel charge added for the distance. If it takes longer than we judged, that is our problem and not a revised invoice.`
+        : 'Before anyone starts you get one figure covering everything we discussed. If the job takes longer than we judged, that is our problem and not a revised invoice.',
+    ],
+    [
+      '72 hours to tell us',
+      'Walk round with the team before they leave. Anything missed, tell us within 72 hours and we come back and re-do it at no charge. The checklist is published on this site, so there is nothing to argue about afterwards.',
+    ],
+    [
+      'The same people, checked before they start',
+      town
+        ? `For regular work in ${esc(town.name)} you get the same two cleaners, who learn your property. Every one is ID-verified and DBS-checked before a first job, and we will send you the certificates.`
+        : 'For regular work you get the same two cleaners, who learn your house. Every one is ID-verified and DBS-checked before a first job, and we will send you the certificates.',
+    ],
+  ]
+    .map(([h, p]) => `<div class="light-card"><h3>${h}</h3><p>${p}</p></div>`)
     .join('');
+}
+
+// Reviews if there are any, promises if not. Never invented testimonials.
+function socialProof(town) {
+  const pool = town ? reviews.filter((r) => r.town === town.slug) : reviews;
+  const shown = pool.slice(0, 3);
+  const where = town ? ` in ${esc(town.name)}` : '';
+
+  if (shown.length) {
+    return `<section class="section section--white">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What customers say</span>
+      <h2>From people whose properties we clean${where}</h2>
+    </div>
+    <div class="grid grid-3">${shown.map(quoteCard).join('')}</div>
+  </div>
+</section>`;
+  }
+
+  return `<section class="section section--white">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our promises</span>
+      <h2>What you can hold us to</h2>
+      <p>Every cleaning company in the West Midlands calls itself reliable and thorough, so the words are worth nothing. These are the specific things we put in writing${where ? ` for work${where}` : ''} &mdash; and the ones to hold against us if we get them wrong.</p>
+    </div>
+    <div class="grid grid-3">${promiseCards(town)}</div>
+  </div>
+</section>`;
 }
 
 function heroMedia(svc, imgs) {
@@ -216,6 +275,11 @@ const globals = {
   formSubject: 'Quote request',
   stars: star.repeat(5),
   starsLarge: star.repeat(5),
+  socialProof: socialProof(null),
+  legalLine: cfg.companyNumber
+    ? `Registered in England &amp; Wales<br>Company No. ${esc(cfg.companyNumber)}`
+    : 'Registered in England &amp; Wales',
+  registeredSub: cfg.companyNumber ? `Company No. ${esc(cfg.companyNumber)}` : 'A limited company, fully insured',
   serviceCount: String(services.length),
   serviceCountWord: word(services.length),
   ServiceCountWord: Word(services.length),
@@ -387,7 +451,7 @@ for (const town of towns) {
       townTravel: esc(town.travel),
       townAreaChips: chipPlain(town.areas),
       townServiceCards: services.map((s) => townServiceCard(s, town)).join(''),
-      townReviews: reviewCards(town.name),
+      socialProof: socialProof(town),
       townFaq: faqList(town.faq),
       townNearby: chipLinks(nearby.map((t) => ({ label: t.name, href: `/areas/${t.slug}` }))),
       formSubject: `Quote request — ${town.name}`,
