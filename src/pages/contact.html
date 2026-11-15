@@ -1,45 +1,67 @@
 <!--
-title: Contact PrimePure Cleaning Solutions | Walsall WS1 & WS2
-description: Contact PrimePure Cleaning Solutions. Business Address: No. 2 Dudley St, Walsall WS1 3NL. Registered Office: 10 Wilbraham Rd, Walsall WS2 9PT.
+title: Contact PrimePure Cleaning Solutions | Walsall WS1
+description: Ring 01922 898 240 or send a message. PrimePure Cleaning Solutions, No. 2 Dudley Street, Walsall WS1 3NL. Mon to Sat, 7:30am to 7:00pm.
 -->
 <section class="page-hero">
   <div class="container">
-    <span class="pill">{{> ic-building}} Walsall Offices &amp; Customer Support</span>
-    <h1>Get in Touch With PrimePure</h1>
-    <p>Whether you require emergency sanitisation, a regular cleaning contract, or advice on tenancy checkouts, our local team is here to assist.</p>
+    <span class="eyebrow">Get in touch</span>
+    <h1>Talk to someone local</h1>
+    <p class="lead">Whether it is a one-off deep clean, a tenancy checkout or an office contract, the quickest route is the phone. Monday to Saturday, someone in Walsall answers.</p>
   </div>
 </section>
 
-<section class="section" style="padding-top:30px">
-  <div class="container contact-grid">
+<section class="section" style="padding-top:24px">
+  <div class="container split">
     <div>
-      <div class="info"><span class="ico">{{> ic-pin}}</span><div><small>Primary Business Address</small><strong>No. 2 Dudley Street</strong><p>Walsall, WS1 3NL<br>United Kingdom</p></div></div>
-      <div class="info"><span class="ico">{{> ic-building}}</span><div><small>Registered Corporate Office</small><strong>10 Wilbraham Road</strong><p>Walsall, WS2 9PT<br>United Kingdom</p></div></div>
-      <div class="info"><span class="ico">{{> ic-phone}}</span><div><small>Customer Care Hotline</small><strong><a href="{{telHref}}">{{phone}}</a></strong></div></div>
-      <div class="info"><span class="ico">{{> ic-mail}}</span><div><small>Email Inquiries</small><strong style="font-size:1rem;word-break:break-word"><a href="{{emailHref}}">{{email}}</a></strong></div></div>
-      <div class="info"><span class="ico">{{> ic-clock}}</span><div><small>Operating Hours</small><p>Monday – Saturday: 7:30 AM – 7:00 PM (Emergency 24/7 Available)</p></div></div>
-      <div class="info-note">Full £5M Public Liability Insurance &amp; DBS-verified operatives</div>
+      <div class="light-card" style="margin-bottom:16px">
+        <span class="eyebrow">By phone</span>
+        <h3 style="font-size:1.6rem;margin-bottom:8px"><a href="{{telHref}}">{{phone}}</a></h3>
+        <p>Mon&ndash;Sat, 7:30am&ndash;7:00pm. Out-of-hours cover available for commercial contracts.</p>
+      </div>
+      <div class="light-card" style="margin-bottom:16px">
+        <span class="eyebrow">By email</span>
+        <h3 style="font-size:1.25rem;margin-bottom:8px"><a href="{{emailHref}}">{{email}}</a></h3>
+        <p>We answer within the hour during working hours, and first thing the next morning otherwise.</p>
+      </div>
+      <div class="light-card">
+        <span class="eyebrow">In person</span>
+        <h3 style="font-size:1.25rem;margin-bottom:8px">No. 2 Dudley Street</h3>
+        <p>Walsall, WS1 3NL<br>Registered office: 10 Wilbraham Road, Walsall, WS2 9PT</p>
+      </div>
     </div>
 
     <div class="form-card">
-      <h2>Send Us a Direct Message</h2>
-      <form data-lead-form data-subject="New website message" data-formsubmit="{{formsubmitAddress}}" data-email="{{email}}" data-phone="{{phone}}" style="margin-top:18px">
+      <h2>Send a message</h2>
+      <p class="intro">Tell us what you need and we will come back to you.</p>
+      <form data-lead-form data-subject="Website message" data-formsubmit="{{formsubmitAddress}}" data-email="{{email}}" data-phone="{{phone}}">
         <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="form-row">
-          <div class="field"><label for="c-first">First Name *</label><input id="c-first" name="First Name" autocomplete="given-name" placeholder="Jane" required></div>
-          <div class="field"><label for="c-last">Last Name</label><input id="c-last" name="Last Name" autocomplete="family-name" placeholder="Smith"></div>
+          <div class="field">
+            <label for="c-name">Name</label>
+            <input id="c-name" name="Name" autocomplete="name" placeholder="Sarah Jenkins" required>
+          </div>
+          <div class="field">
+            <label for="c-phone">Phone</label>
+            <input id="c-phone" name="Phone" type="tel" autocomplete="tel" placeholder="07123 456789" required>
+          </div>
         </div>
-        <div class="form-row">
-          <div class="field"><label for="c-email">Email Address *</label><input id="c-email" name="Email Address" type="email" autocomplete="email" placeholder="jane@example.co.uk" required></div>
-          <div class="field"><label for="c-phone">Phone Number *</label><input id="c-phone" name="Phone Number" type="tel" autocomplete="tel" placeholder="07123 456789" required></div>
+        <div class="field">
+          <label for="c-email">Email</label>
+          <input id="c-email" name="Email" type="email" autocomplete="email" placeholder="sarah@example.co.uk" required>
         </div>
-        <div class="field"><label for="c-service">Service Required</label>
-          <select id="c-service" name="Service"><option>Commercial &amp; Office Cleaning</option><option>Domestic &amp; Residential Deep Clean</option><option>End of Tenancy Cleaning</option><option>Carpet &amp; Upholstery Cleaning</option><option>Reach &amp; Wash Window Cleaning</option><option>After Builders &amp; Sparkle Clean</option><option>Other Inquiries / Bespoke</option></select>
+        <div class="field">
+          <label for="c-service">What is it about?</label>
+          <select id="c-service" name="Subject">{{serviceOptions}}<option>Something else</option></select>
         </div>
-        <div class="field"><label for="c-message">Your Message / Cleaning Specification</label><textarea id="c-message" name="Message" placeholder="Tell us about your property and what you need..."></textarea></div>
-        <button class="btn btn--blue btn--block" type="submit">{{> ic-send}} Submit Inquiry</button>
+        <div class="field">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="Message" placeholder="Tell us about the property and what you need&hellip;"></textarea>
+        </div>
+        <button class="btn btn--blue btn--block" type="submit">Send message</button>
         <div class="form-status" role="status" aria-live="polite"></div>
       </form>
     </div>
   </div>
 </section>
+
+{{> cta}}

@@ -1,0 +1,108 @@
+<div class="container crumbs">
+  <nav aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li aria-hidden="true">/</li>
+      <li><a href="/areas">Areas we cover</a></li>
+      <li aria-hidden="true">/</li>
+      <li><span aria-current="page">{{townName}}</span></li>
+    </ol>
+  </nav>
+</div>
+
+<section class="page-hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">{{ic_pin}} {{townName}} &middot; {{townPostcodes}}</span>
+      <h1>Cleaning services in {{townName}}</h1>
+      <p class="lead">{{townIntro}}</p>
+      <div class="btn-row" style="margin-bottom:28px">
+        <a class="btn btn--blue" href="/quote">Request a quote</a>
+        <a class="btn btn--line" href="{{telHref}}">{{ic_phone}} {{phone}}</a>
+      </div>
+      <ul class="trust-row">
+        <li>{{ic_check}} No travel charge in {{townPostcodes}}</li>
+        <li>{{ic_check}} DBS-checked, &pound;5m insured</li>
+        <li>{{ic_check}} We reply within the hour</li>
+      </ul>
+    </div>
+    <div class="hero-media">
+      <img src="{{img_living}}" alt="A room cleaned by our {{townName}} team" width="1100" height="760">
+      <div class="float-card">
+        <div class="stars">{{stars}}</div>
+        <p>[REVIEW FROM A {{townUpper}} CUSTOMER]</p>
+        <p class="by">[NAME], [AREA] &middot; Google</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What we do here</span>
+      <h2>Six services across {{townName}}</h2>
+      <p>Each one links through to its own page, which is how someone searching for a specific job in {{townName}} finds us rather than a national directory.</p>
+    </div>
+    <div class="grid grid-3">{{townServiceCards}}</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Coverage</span>
+      <h2>Where in {{townName}} we clean</h2>
+      <p class="lead">{{townHousing}}</p>
+      <p class="muted" style="margin-bottom:24px">If you are not sure whether your postcode is covered, ring and ask &mdash; we will tell you straight either way.</p>
+      <ul class="chips">{{townAreaChips}}</ul>
+    </div>
+    <div class="facts">
+      <h3>{{townName}} at a glance</h3>
+      <dl>
+        <div class="row"><dt>Postcodes covered</dt><dd>{{townPostcodes}}</dd></div>
+        <div class="row"><dt>Travel charge</dt><dd>None</dd></div>
+        <div class="row"><dt>Jobs completed here</dt><dd>[NUMBER]</dd></div>
+        <div class="row"><dt>Earliest slot</dt><dd>7:30am, Mon&ndash;Sat</dd></div>
+      </dl>
+      <a class="btn btn--gold btn--block" href="/quote">Check my postcode</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="container">
+    <div class="head-row">
+      <div class="section-head">
+        <span class="eyebrow">Local reviews</span>
+        <h2>What {{townName}} customers say</h2>
+        <p>Reviews are filtered by town, so this page shows {{townName}} ones. Far more persuasive than a general wall of praise.</p>
+      </div>
+      <div class="rating"><span class="stars">{{starsLarge}}</span><span>[RATING] from [N] reviews</span></div>
+    </div>
+    <div class="grid grid-3">{{townReviews}}</div>
+  </div>
+</section>
+
+<section class="section" id="quote">
+  <div class="container split">
+    <div class="faq">
+      <span class="eyebrow">{{townName}} questions</span>
+      <h2>Asked locally</h2>
+      <dl>{{townFaq}}</dl>
+      <p class="muted" style="margin-top:24px">{{townTravel}}</p>
+    </div>
+    <div class="form-card">
+      <h2>Request a quote</h2>
+      <p class="intro">For a {{townName}} property. Back to you within the hour, Monday to Saturday.</p>
+      {{> quote-form}}
+    </div>
+  </div>
+</section>
+
+<section class="section section--white section--tight">
+  <div class="container">
+    <h2 style="font-size:1.5rem">We also clean nearby</h2>
+    <ul class="chips">{{townNearby}}</ul>
+  </div>
+</section>

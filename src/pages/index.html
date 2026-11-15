@@ -1,71 +1,133 @@
 <!--
-title: PrimePure Cleaning Solutions | Commercial & Domestic Cleaning Walsall
-description: Walsall's premier cleaning service. Operating at No. 2 Dudley St (WS1 3NL) & 10 Wilbraham Rd (WS2 9PT). Free same-day quote for residential, office & tenancy deep cleans.
+title: Cleaning Services in Walsall & the West Midlands | PrimePure
+description: Deep cleans, end-of-tenancy handovers, carpet extraction and office contracts across Walsall, Birmingham, Wolverhampton and six more towns. DBS-checked, £5m insured.
 -->
 <section class="hero">
   <div class="container hero-grid">
     <div>
-      <span class="pill">{{> ic-sparkle}} Premier Cleaning Specialists in Walsall &amp; West Midlands</span>
-      <h1>Real Cleaning Results. <span class="hl-u">Spotless Homes</span> &amp; Workspaces.</h1>
-      <p class="lead">From heavily cluttered and lived-in rooms to pristine, freshly sanitized homes. Serving Walsall from <strong>No. 2 Dudley St</strong> and <strong>10 Wilbraham Rd</strong> with £5M insurance and DBS-checked staff.</p>
-      <div class="thumbs-label">Recent real work by our Walsall team:</div>
-      <div class="thumbs">
-        <div class="thumb"><img src="{{img_living}}" alt="Pristine living room after cleaning"><span>Pristine Living Room</span></div>
-        <div class="thumb"><img src="{{img_bedroom}}" alt="Deep sanitised bedroom"><span>Deep Sanitised Room</span></div>
-        <div class="thumb"><img src="{{img_carpet}}" alt="Carpet after deep dirt extraction"><span>Deep Carpet Dirt Lift</span></div>
+      <span class="eyebrow">Established in Walsall &middot; WS1</span>
+      <h1>Cleaning done properly, across Walsall and the West&nbsp;Midlands.</h1>
+      <p class="lead">Deep cleans, end-of-tenancy handovers, carpet extraction and office contracts &mdash; carried out by DBS-checked, insured staff working out of Dudley Street.</p>
+      <div class="btn-row" style="margin-bottom:30px">
+        <a class="btn btn--blue" href="/quote">Request a quote</a>
+        <a class="btn btn--line" href="{{telHref}}">{{ic_phone}} {{phone}}</a>
       </div>
-      <div class="trust-row">
-        <span>{{> ic-shield}} DBS Checked Cleaners</span>
-        <span>{{> ic-award}} £5,000,000 Insured</span>
-        <span>{{> ic-calendar}} 48hr Free Re-Clean</span>
-      </div>
+      <ul class="trust-row">
+        <li>{{ic_check}} DBS-checked cleaners</li>
+        <li>{{ic_check}} &pound;5m public liability</li>
+        <li>{{ic_check}} We reply within the hour</li>
+      </ul>
     </div>
-    <div class="form-card" id="quote">
-      <span class="tag">Fast 1-Hour Response</span>
-      <span class="eyebrow">Get Free Direct Quote</span>
-      <h2>Book Your Clean</h2>
-      <p class="intro">Tell us about your property and get an exact, tailored quote without hassle.</p>
-      <form data-lead-form data-subject="New quote request" data-formsubmit="{{formsubmitAddress}}" data-email="{{email}}" data-phone="{{phone}}">
-        {{> quote-fields}}
-        <button class="btn btn--blue btn--block" type="submit">{{> ic-send}} Get Free Fast Quote Now</button>
-        <div class="form-status" role="status" aria-live="polite"></div>
-        <div class="form-foot"><span class="ok">✓ Free &amp; no obligation</span><a href="{{telHref}}">Or call {{phone}}</a></div>
-      </form>
+    <div class="hero-media">
+      <img src="{{img_living}}" alt="A lounge in a Walsall home after a deep clean" width="1100" height="760" fetchpriority="high">
+      <div class="float-card">
+        <div class="stars">{{stars}}</div>
+        <p>[ONE-SENTENCE REVIEW]</p>
+        <p class="by">[NAME], [AREA] &middot; Google</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="address-strip">
+<div class="creds">
   <div class="container">
-    <div class="addr"><span class="ico">{{> ic-pin}}</span><div><small>Business Address</small><strong>No. 2 Dudley Street</strong><span>Walsall, WS1 3NL</span></div></div>
-    <div class="addr"><span class="ico">{{> ic-building}}</span><div><small style="color:var(--muted)">Registered Corporate Office</small><strong>10 Wilbraham Road</strong><span>Walsall, WS2 9PT</span></div></div>
-    <a class="btn btn--line addr-call" href="{{telHref}}">{{> ic-phone}} Direct Line: {{phone}}</a>
+    <div>{{ic_shield}}<span><b>&pound;5m public liability</b><i>Certificate on request</i></span></div>
+    <div>{{ic_user}}<span><b>Every cleaner DBS-checked</b><i>ID verified before a first job</i></span></div>
+    <div>{{ic_building}}<span><b>Registered in England</b><i>Company No. [NUMBER]</i></span></div>
+    <div>{{ic_leaf}}<span><b>COSHH-trained, eco products</b><i>Safe around pets and children</i></span></div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="head-row">
+      <div class="section-head">
+        <span class="eyebrow">What we do</span>
+        <h2>Six services, each with its own page</h2>
+        <p>Every service below has a full page of its own &mdash; what it covers, how we work, and the checklist we work to.</p>
+      </div>
+      <a class="textlink" href="/services">See all services {{ic_arrow}}</a>
+    </div>
+    <div class="grid grid-3">{{serviceCards}}</div>
+  </div>
+</section>
+
+<section class="section section--white" id="work">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our work</span>
+      <h2>Real rooms, not stock photos</h2>
+      <p>Every photograph here was taken on a job in Walsall. The empty frame is where a matched before-and-after pair belongs &mdash; same corner, same angle, two shots.</p>
+    </div>
+    <div class="grid grid-3 gallery">
+      <figure>
+        <img src="{{img_living}}" alt="Lounge with laminate floor after a deep clean" loading="lazy" width="1100" height="760">
+        <figcaption>Lounge and laminate &mdash; regular clean, WS2</figcaption>
+      </figure>
+      <figure>
+        <img src="{{img_carpet}}" alt="High-traffic carpet during hot-water extraction" loading="lazy" width="900" height="700">
+        <figcaption>High-traffic carpet &mdash; hot-water extraction</figcaption>
+      </figure>
+      <figure>
+        <img src="{{img_bedroom}}" alt="A child's bedroom cleaned and reset" loading="lazy" width="900" height="700">
+        <figcaption>Child&rsquo;s bedroom &mdash; reset and sanitised</figcaption>
+      </figure>
+      <figure>
+        <img src="{{img_clutter}}" alt="A heavily cluttered bedroom before a deep reset" loading="lazy" width="900" height="700">
+        <figcaption>Clutter reset &mdash; the starting point</figcaption>
+      </figure>
+      <figure>
+        <img src="{{img_underbed}}" alt="Dust and debris in the hard-to-reach space under a bed" loading="lazy" width="900" height="700">
+        <figcaption>Under-bed clearance &mdash; hard-to-reach areas</figcaption>
+      </figure>
+      <figure>
+        <div class="ghost-tile">
+          {{ic_camera}}
+          <b>Before / after pair</b>
+          <span>Shoot the same corner twice &mdash; this is the strongest image you can put on the site.</span>
+        </div>
+        <figcaption>[TO BE PHOTOGRAPHED]</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container band-split">
+    <div class="text">
+      <span class="eyebrow">What most cleaners turn down</span>
+      <h2>No judgement. Just a reset.</h2>
+      <p>Landlords, tenants, carers and families call us about rooms they would rather nobody saw. Dust behind the bed, laundry that got ahead of someone, a flat that needs clearing before a relative arrives.</p>
+      <p style="margin-bottom:30px">Two of our staff, the same two throughout, and nothing said to anyone.</p>
+      <a class="btn btn--pale" href="/services/decluttering">Talk to us in confidence</a>
+    </div>
+    <div class="band-media">
+      <img src="{{img_clutter}}" alt="A heavily cluttered bedroom before a deep reset" loading="lazy">
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">Real Authentic Work</span>
-      <h2>See Our Actual Cleaning In Action</h2>
-      <p>No generic stock imagery. Here is real evidence of our deep cleans, carpet dirt extraction, and room restorations in Walsall properties.</p>
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps, no site visit needed</h2>
     </div>
-    <div class="grid grid-3">
-      <article class="card"><div class="media"><img src="{{img_living}}" alt="Laminate floor and lounge after deep sanitisation" loading="lazy"><span class="badge">Clean &amp; Fresh Living Space</span></div><div class="body"><h3>Laminate Floor &amp; Lounge Deep Sanitisation</h3><p>Wood and laminate degreased, polished, edges dusted and leather sofas wiped down leaving a clean, inviting atmosphere.</p><div class="tag-line">{{> ic-check}} Pet &amp; Child Safe Cleaning Products</div></div></article>
-      <article class="card"><div class="media"><img src="{{img_carpet}}" alt="High-traffic carpet after dirt extraction" loading="lazy"><span class="badge">Heavy Fiber Carpet Extraction</span></div><div class="body"><h3>High-Traffic Carpet Dirt &amp; Dust Extraction</h3><p>Lifting deep ground-in dirt, embedded pet hairs and dust from room carpets using professional industrial grade machinery.</p><div class="tag-line">{{> ic-check}} Deep Pile Fiber Rejuvenation</div></div></article>
-      <article class="card"><div class="media"><img src="{{img_bedroom}}" alt="Children's bedroom sanitised and reset" loading="lazy"><span class="badge">Bedroom Sanitised &amp; Reset</span></div><div class="body"><h3>Children's Bedroom &amp; Furniture Clean</h3><p>Mattress area sanitised, vacuumed edge-to-edge, skirting boards wiped and room thoroughly disinfected for safe, restful sleep.</p><div class="tag-line">{{> ic-check}} Non-Toxic Allergen Removal</div></div></article>
-    </div>
-
-    <div class="feature-box">
-      <div class="pics">
-        <figure><img src="{{img_underbed}}" alt="Dust and clutter in hard-to-reach areas under a bed" loading="lazy"><figcaption>Hard-To-Reach Areas</figcaption></figure>
-        <figure><img src="{{img_clutter}}" alt="Heavily cluttered bedroom before cleaning" loading="lazy"><figcaption>Heavy Clutter Rooms</figcaption></figure>
+    <div class="steps">
+      <div>
+        <span class="n">01</span>
+        <h3>Tell us about the property</h3>
+        <p>Rooms, condition, postcode and when you need it. Photos help but are not required.</p>
       </div>
       <div>
-        <span class="eyebrow eyebrow--gold">No Job Too Challenging</span>
-        <h2 style="font-size:1.6rem">Tough, Cluttered or Neglected Spaces? We Specialize in Discretion &amp; Deep Transformation.</h2>
-        <p>We frequently help landlords, tenants, busy families, and property managers tackle spaces where dust, laundry, or debris have accumulated behind beds, under furniture, and in corners. We never judge — we simply get it spotless.</p>
-        <a class="btn btn--blue" href="/quote">Request A Quote For Your Space {{> ic-arrow}}</a>
+        <span class="n">02</span>
+        <h3>We come back within the hour</h3>
+        <p>In writing, setting out exactly what we would do and when we could do it.</p>
+      </div>
+      <div>
+        <span class="n">03</span>
+        <h3>We clean, you check</h3>
+        <p>Walk round with the team before they leave. Anything missed, we come back within 72 hours.</p>
       </div>
     </div>
   </div>
@@ -73,32 +135,73 @@ description: Walsall's premier cleaning service. Operating at No. 2 Dudley St (W
 
 <section class="section section--white">
   <div class="container">
-    <div class="section-head" style="display:flex;justify-content:space-between;align-items:flex-end;text-align:left;max-width:none;flex-wrap:wrap;gap:16px">
-      <div><span class="eyebrow">Our Professional Hygiene Services</span><h2 style="margin:0">Comprehensive Cleaning in Walsall</h2></div>
-      <a class="btn btn--line" href="/services">View All Detailed Services {{> ic-arrow}}</a>
+    <div class="head-row">
+      <div class="section-head">
+        <span class="eyebrow">What customers say</span>
+        <h2>From people whose houses we clean</h2>
+      </div>
+      <div class="rating"><span class="stars">{{starsLarge}}</span><span>[RATING] from [N] Google reviews</span></div>
     </div>
-    <div class="grid grid-3 services-grid">
-      <article class="card"><div class="media"><img src="{{img_living}}" alt="Domestic deep clean" loading="lazy"><span class="price">From £20 / hour</span></div><div class="body"><h3>Domestic &amp; Residential Deep Clean</h3><p>Regular house cleans, top-to-bottom thorough deep cleans and room decluttering across Walsall &amp; West Midlands.</p><ul class="checks"><li>Eco-friendly, child &amp; pet safe products</li><li>Key-holding insured service</li><li>Kitchen degreasing, descaling &amp; sanitising</li></ul><a class="btn btn--line btn--block" href="/quote?service=Domestic%20%26%20Residential%20Deep%20Clean">Request Quote for This</a></div></article>
-      <article class="card"><div class="media"><img src="{{img_carpet}}" alt="Carpet deep extraction" loading="lazy"><span class="price">From £39 / room</span></div><div class="body"><h3>Carpet &amp; Floor Deep Extraction</h3><p>Deep fiber vacuuming, hot-water extraction, stain lifting, neutralising odours and allergen removal.</p><ul class="checks"><li>Heavy pile restoration &amp; dirt lift</li><li>Deep fiber sanitisation</li><li>Pet hair &amp; ground-in grime specialists</li></ul><a class="btn btn--line btn--block" href="/quote?service=Carpet%20%26%20Floor%20Deep%20Clean">Request Quote for This</a></div></article>
-      <article class="card"><div class="media"><img src="{{img_bedroom}}" alt="End of tenancy clean" loading="lazy"><span class="price">From £129</span></div><div class="body"><h3>End of Tenancy &amp; Handover Cleans</h3><p>Guaranteed deposit-return cleaning compliant with leading UK letting agents and landlords' strict handover checklists.</p><ul class="checks"><li>100% Deposit Back Guarantee (72hr re-clean)</li><li>Oven, appliance &amp; skirting deep clean</li><li>Approved agency inventory checklist</li></ul><a class="btn btn--line btn--block" href="/quote?service=End%20of%20Tenancy%20(Guaranteed)">Request Quote for This</a></div></article>
+    <div class="grid grid-3">
+      <blockquote class="quote">
+        <div class="stars">{{stars}}</div>
+        <p>[REVIEW &mdash; two or three lines, in the customer&rsquo;s own words]</p>
+        <footer>[NAME] &middot; [TOWN] &middot; [SERVICE]</footer>
+      </blockquote>
+      <blockquote class="quote">
+        <div class="stars">{{stars}}</div>
+        <p>[REVIEW &mdash; ideally one that names the town, so the town page can carry it]</p>
+        <footer>[NAME] &middot; [TOWN] &middot; [SERVICE]</footer>
+      </blockquote>
+      <blockquote class="quote">
+        <div class="stars">{{stars}}</div>
+        <p>[REVIEW &mdash; a landlord or letting agent carries the most weight for tenancy work]</p>
+        <footer>[NAME] &middot; [TOWN] &middot; [SERVICE]</footer>
+      </blockquote>
     </div>
   </div>
 </section>
 
-<section class="section dark">
+<section class="section section--tint" id="areas">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">The PrimePure Distinction</span>
-      <h2>Why Walsall Businesses &amp; Families Rely on Us</h2>
-      <p>Consistent reliability, medical-grade hygiene protocols, and straightforward communication.</p>
+      <span class="eyebrow">Where we work</span>
+      <h2>Nine towns, nine pages</h2>
+      <p>Each town has a page of its own with the areas we cover and the questions people there actually ask &mdash; then a page per service within it.</p>
     </div>
-    <div class="grid grid-4">
-      <div class="why-card"><div class="ico">{{> ic-shield}}</div><h3>Full £5M Liability</h3><p>Comprehensive insurance protection so you have complete peace of mind while we clean.</p></div>
-      <div class="why-card"><div class="ico">{{> ic-award}}</div><h3>100% Deposit Return</h3><p>Our tenancy cleanings follow strict letting agent checklists with a free 72-hour re-clean guarantee.</p></div>
-      <div class="why-card"><div class="ico">{{> ic-clock}}</div><h3>Flexible Scheduling</h3><p>Out-of-hours commercial cleans, early mornings or weekend domestic slots available upon request.</p></div>
-      <div class="why-card"><div class="ico">{{> ic-home}}</div><h3>Eco-Safe Formulas</h3><p>Non-toxic, allergen-reducing cleaning detergents that are pet and child-friendly.</p></div>
-    </div>
+    <div class="tiles">{{townTiles}}</div>
   </div>
 </section>
 
-{{> cta}}
+<section class="section" id="quote">
+  <div class="container split">
+    <div class="faq">
+      <span class="eyebrow">Common questions</span>
+      <h2>Before you book</h2>
+      <dl>
+        <div class="item">
+          <dt>Are you insured, and can I see it?</dt>
+          <dd>Yes &mdash; &pound;5m public liability. We will send the certificate with your quote if you ask.</dd>
+        </div>
+        <div class="item">
+          <dt>What happens if something is missed?</dt>
+          <dd>Tell us within 72 hours and we return and re-clean it at no charge. That is the same 72 hours everywhere on this site.</dd>
+        </div>
+        <div class="item">
+          <dt>Do you bring your own products?</dt>
+          <dd>Everything, including the machines. Products are non-toxic and safe around pets and children.</dd>
+        </div>
+        <div class="item">
+          <dt>How far do you travel?</dt>
+          <dd>Across the nine towns listed above. Outside them, ring us and we will tell you honestly.</dd>
+        </div>
+      </dl>
+    </div>
+    <div class="form-card">
+      <h2>Request a quote</h2>
+      <p class="intro">Back to you within the hour, Monday to Saturday.</p>
+      {{> quote-form}}
+      <p class="form-foot">Or ring <a href="{{telHref}}">{{phone}}</a> &mdash; someone local answers.</p>
+    </div>
+  </div>
+</section>
