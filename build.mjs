@@ -524,5 +524,26 @@ fs.writeFileSync(
 );
 fs.writeFileSync(path.join(root, 'public/robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${cfg.url}/sitemap.xml\n`);
 
+fs.writeFileSync(
+  path.join(root, 'public/site.webmanifest'),
+  JSON.stringify(
+    {
+      name: cfg.name,
+      short_name: 'PrimePure',
+      start_url: '/',
+      display: 'standalone',
+      background_color: '#F7F5F0',
+      theme_color: '#0050C0',
+      icons: [
+        { src: globals.img_icon192, sizes: '192x192', type: 'image/png' },
+        { src: globals.img_icon512, sizes: '512x512', type: 'image/png' },
+        { src: globals.img_appleIcon, sizes: '180x180', type: 'image/png' },
+      ],
+    },
+    null,
+    2
+  ) + '\n'
+);
+
 console.log(`Built ${sitemap.length} indexed pages into public/`);
 console.log(`  ${services.length} service pages, ${towns.length} town pages, ${primaryTowns.length * services.length} town+service pages`);
