@@ -5,16 +5,16 @@ Deployed on Vercel from `public/`.
 
 ## What gets built
 
-45 pages, from three data files:
+50 pages, from three data files:
 
 | Pages | Where they come from | Example URL |
 | --- | --- | --- |
 | Home, About, Contact, Quote, 404 | `src/pages/` | `/about` |
 | Services index | `src/templates/services-index.html` | `/services` |
-| 6 service pages | `src/data/services.json` | `/services/end-of-tenancy-cleaning` |
+| 7 service pages | `src/data/services.json` | `/services/end-of-tenancy-cleaning` |
 | Areas index | `src/templates/areas-index.html` | `/areas` |
 | 9 town pages | `src/data/towns.json` | `/areas/wolverhampton` |
-| 24 town + service pages | `src/data/pairs.json` | `/areas/walsall/carpet-cleaning` |
+| 28 town + service pages | `src/data/pairs.json` | `/areas/walsall/carpet-cleaning` |
 
 Town + service pages are only generated for towns marked `"primary": true`
 **and** which have an entry in `pairs.json`. That is deliberate: a page with

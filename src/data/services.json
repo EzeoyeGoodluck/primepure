@@ -4,7 +4,7 @@
     "name": "House cleaning",
     "nav": "Regular & deep home cleaning",
     "label": "Domestic",
-    "image": "living",
+    "image": "kitchen",
     "summary": "Weekly, fortnightly or a one-off top-to-bottom clean. Key-holding available.",
     "bullets": ["Kitchen degreasing and descaling", "The same team every visit", "Child and pet safe products"],
     "intro": "Regular housekeeping or a one-off deep clean, carried out by the same two people each visit so nobody has to be shown round twice. Keys held securely if you would rather not be in.",
@@ -32,7 +32,7 @@
     "name": "End of tenancy cleaning",
     "nav": "End of tenancy & handover",
     "label": "Lettings",
-    "image": "bedroom",
+    "image": "apartment",
     "summary": "Worked to the agent's inventory checklist, with a free re-clean if anything is flagged.",
     "bullets": ["72-hour re-clean guarantee", "Oven, appliances and skirtings", "Photo handover report"],
     "intro": "Cleaned to the inventory checklist your agent actually uses, photographed on completion, and re-done free within 72 hours if anything is flagged on the checkout report.",
@@ -167,5 +167,35 @@
       { "q": "How much notice do you need?", "a": "We keep slots free each week for post-works jobs because dates move. Ring as soon as you have a likely day." }
     ],
     "notIncluded": "Not included: rubble and construction waste removal, snagging or making good, and scaffold-level external cleaning."
+  },
+  {
+    "slug": "school-cleaning",
+    "name": "School and nursery cleaning",
+    "nav": "School & nursery cleaning",
+    "label": "Education",
+    "image": null,
+    "summary": "Classrooms, washrooms and halls cleaned around the timetable by Enhanced DBS-checked staff.",
+    "bullets": ["Enhanced DBS on every member of staff", "Colour-coded equipment, no cross-use", "Deep cleans in the school holidays"],
+    "intro": "Daily cleaning for primary and secondary schools, nurseries and colleges, worked around the timetable rather than through it. Every member of staff on a school site holds an Enhanced DBS, and the same team comes back so you are not re-inducting strangers every week.",
+    "checklist": [
+      { "group": "Classrooms", "items": ["Desks, chairs and table tops sanitised", "High-touch points: handles, switches, rails", "Whiteboards, trays and shelving", "Floors swept, mopped or vacuumed", "Bins emptied and liners replaced"] },
+      { "group": "Washrooms & changing", "items": ["WCs, urinals and basins disinfected", "Low-level pupil fittings not missed", "Soap, paper and tissue restocked", "Floors washed with virucidal detergent", "Sanitary and nappy waste handled"] },
+      { "group": "Halls, corridors & offices", "items": ["Main halls and dining spaces reset", "Corridors, stairwells and entrances", "Reception and admin offices", "Glass doors and internal partitions", "Matting lifted and cleaned under"] },
+      { "group": "Kitchens & food areas", "items": ["Servery and dining tables after service", "Staff room worktops and appliances", "Fridges and microwaves inside", "Floors degreased", "Food-area cloths kept separate"] }
+    ],
+    "process": [
+      { "title": "A site walk and a written spec", "text": "We walk the building with your site manager and agree exactly what is cleaned, how often and at what time. That written schedule is what the team works to, and what we are inspected against." },
+      { "title": "Around the timetable", "text": "Most of the work happens after the last bell or before the first. Nurseries and wraparound care often need a mid-afternoon pass as well, which we build into the round." },
+      { "title": "Enhanced DBS and safeguarding", "text": "Everyone on site holds an Enhanced DBS, signs in through your visitor system and follows your safeguarding policy. Certificates go to your office before a first shift." },
+      { "title": "Holidays are for the deep work", "text": "Half terms and the summer are when floors get stripped and sealed, carpets extracted and the jobs done that cannot happen in term time." }
+    ],
+    "faq": [
+      { "q": "Are your staff Enhanced DBS-checked?", "a": "Everyone who sets foot on a school or nursery site, without exception. We send the certificates to your office before a first shift and keep the renewals current." },
+      { "q": "Can you work around the school day?", "a": "Yes, and we expect to. Most school rounds run after the last bell or before the first. Nurseries and wraparound care usually need a mid-afternoon pass too." },
+      { "q": "How do you stop cross-contamination?", "a": "Colour-coded cloths and mops, one colour per area, never crossed between washrooms, classrooms and food areas. Staff are trained on it and supervisors check it." },
+      { "q": "Do you do holiday deep cleans?", "a": "That is when most of the heavy work happens — floor stripping and sealing, carpet extraction, high-level dusting and anything else that cannot be done with pupils in the building." },
+      { "q": "What about an outbreak?", "a": "We can put on an additional virucidal fogging or touch-point pass at short notice. Tell us in the morning and we will usually cover it that evening." }
+    ],
+    "notIncluded": "Specialist work is arranged separately and quoted on its own: window cleaning above ground floor, kitchen extract canopy cleaning, playground jet washing and clinical waste contracts."
   }
 ]

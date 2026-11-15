@@ -7,8 +7,12 @@
   "formsubmitAddress": "hello@primepurecleaning.co.uk",
   "images": {
     "logo": "/assets/img/logo.png",
-    "living": "/assets/img/living.jpg",
+    "kitchen": "/assets/img/kitchen.jpg",
     "bedroom": "/assets/img/bedroom.jpg",
+    "bathroom": "/assets/img/bathroom.jpg",
+    "apartment": "/assets/img/apartment.jpg",
+    "kitchenbusy": "/assets/img/kitchenbusy.jpg",
+    "living": "/assets/img/living.jpg",
     "carpet": "/assets/img/carpet.jpg",
     "underbed": "/assets/img/underbed.jpg",
     "clutter": "/assets/img/clutter.jpg"

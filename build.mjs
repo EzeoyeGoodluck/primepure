@@ -19,9 +19,18 @@ const services = json('src/data/services.json');
 const towns = json('src/data/towns.json');
 const pairs = json('src/data/pairs.json');
 
-const svcBySlug = Object.fromEntries(services.map((s) => [s.slug, s]));
-const townBySlug = Object.fromEntries(towns.map((t) => [t.slug, t]));
 const primaryTowns = towns.filter((t) => t.primary);
+
+// A town+service page only exists where pairs.json has a hand-written intro
+// for that combination. Every link to one goes through this, so adding a
+// service without writing its intros can never produce a dead link.
+const hasPair = (town, svc) => Boolean(town.primary && pairs[town.slug] && pairs[town.slug][svc.slug]);
+const serviceHref = (town, svc) => (hasPair(town, svc) ? `/areas/${town.slug}/${svc.slug}` : `/services/${svc.slug}`);
+const townHref = (town, svc) => (hasPair(town, svc) ? `/areas/${town.slug}/${svc.slug}` : `/areas/${town.slug}`);
+
+const NUMBER_WORDS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
+const word = (n) => NUMBER_WORDS[n] || String(n);
+const Word = (n) => { const w = word(n); return w.charAt(0).toUpperCase() + w.slice(1); };
 
 /* ---------- icons ---------- */
 const stroke = (d, extra = '') =>
@@ -64,7 +73,7 @@ function serviceCard(svc, hrefPrefix = '/services') {
 }
 
 function townServiceCard(svc, town) {
-  const href = town.primary ? `/areas/${town.slug}/${svc.slug}` : `/services/${svc.slug}`;
+  const href = serviceHref(town, svc);
   return `<article class="card">
   <span class="label">${esc(svc.label)}</span>
   <h3>${esc(svc.name)} in ${esc(town.name)}</h3>
@@ -74,7 +83,8 @@ function townServiceCard(svc, town) {
 }
 
 function townTile(town) {
-  const sub = town.primary && town.slug === 'walsall' ? 'Head office &middot; 6 services' : '6 services';
+  const n = `${services.length} services`;
+  const sub = town.slug === 'walsall' ? `Head office &middot; ${n}` : n;
   return `<a class="tile" href="/areas/${town.slug}">
   <span><b>${esc(town.name)}</b><span>${sub}</span></span>
   ${icons.arrow}
@@ -190,6 +200,9 @@ const globals = {
   formSubject: 'Quote request',
   stars: star.repeat(5),
   starsLarge: star.repeat(5),
+  serviceCount: String(services.length),
+  serviceCountWord: word(services.length),
+  ServiceCountWord: Word(services.length),
   serviceOptions: services.map((s) => `<option>${esc(s.nav)}</option>`).join(''),
   serviceCards: services.map((s) => serviceCard(s)).join(''),
   townTiles: towns.map(townTile).join(''),
@@ -324,12 +337,7 @@ for (const svc of services) {
       svcProcess: processList(svc),
       svcFaq: faqList(svc.faq),
       svcNotIncluded: esc(svc.notIncluded),
-      svcTownChips: chipLinks(
-        towns.map((t) => ({
-          label: t.name,
-          href: t.primary ? `/areas/${t.slug}/${svc.slug}` : `/areas/${t.slug}`,
-        }))
-      ),
+      svcTownChips: chipLinks(towns.map((t) => ({ label: t.name, href: townHref(t, svc) }))),
       formSubject: `Quote request — ${svc.name}`,
     },
     schema: schemaFor([
@@ -379,11 +387,11 @@ for (const town of primaryTowns) {
     const intro = pairs[town.slug] && pairs[town.slug][svc.slug];
     if (!intro) continue;
     const url = `/areas/${town.slug}/${svc.slug}`;
-    const siblings = services.filter((s) => s.slug !== svc.slug).map((s) => ({ label: s.name, href: `/areas/${town.slug}/${s.slug}` }));
+    const siblings = services.filter((s) => s.slug !== svc.slug).map((s) => ({ label: s.name, href: serviceHref(town, s) }));
     const nearby = towns
       .filter((t) => t.slug !== town.slug)
       .slice(0, 5)
-      .map((t) => ({ label: t.name, href: t.primary ? `/areas/${t.slug}/${svc.slug}` : `/areas/${t.slug}` }));
+      .map((t) => ({ label: t.name, href: townHref(t, svc) }));
     emit({
       out: `areas/${town.slug}/${svc.slug}/index.html`,
       url,
