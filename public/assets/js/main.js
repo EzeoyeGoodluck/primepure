@@ -70,7 +70,13 @@
         .then(function (res) {
           var msg = String(res.message || '');
           if (/activat/i.test(msg)) {
-            show('success', 'Not delivered yet — the form needs activating. Check ' + email + ' for the FormSubmit activation link.');
+            // Owner-facing: the FormSubmit address has never been confirmed.
+            // Submit this form once, then click the activation link sent to
+            // the address above. Until then nothing is delivered.
+            if (window.console && console.warn) {
+              console.warn('PrimePure: form not activated. Click the FormSubmit activation link sent to ' + email + '.');
+            }
+            show('error', 'Sorry, that did not send. Please ring ' + phone + ' or email ' + email + ' and we will get straight back to you.');
             return;
           }
           if (String(res.success) !== 'true') throw new Error(msg || 'Failed');
